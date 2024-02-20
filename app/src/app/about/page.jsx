@@ -5,6 +5,7 @@ export default function page() {
   return (
     <div>
       Hello From About !!!
+      <hr />
       <Testing1 />      
     </div>
   )
