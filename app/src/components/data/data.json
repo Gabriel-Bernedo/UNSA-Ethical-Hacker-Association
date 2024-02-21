@@ -1,0 +1,107 @@
+{
+  "index": {
+    "nav": [
+      {
+        "title": "Mas Informacion",
+        "href": "/about",
+        "desc": "Descubre mas acerca de nosotros"
+      },
+      {
+        "title": "Noticias",
+        "href": "/news",
+        "desc": "Noticias recientes relacionadas con el grupo"
+      },
+      {
+        "title": "Recursos",
+        "href": "/resources",
+        "desc": "Recopilacion de materiales para ciberseguridad"
+      }
+    ],
+    "intro": {
+      "desc": "Bienvenido a UEHA (UNSA Ethical Hacker Association), actualmente somos un grupo de estudio enfocado a conceptos de ciberseguridad",
+      "img": "/next.svg"
+    }
+  },
+  "resources": {
+    "tools": [
+      {
+        "name": "Putty",
+        "desc": "Emulador de terminal, consola Open-Source, aplicacion para transferencia de archivos, soporta SCP, SSH, Telnet, rlogin y raw socket connection",
+        "img": "",
+        "href": "https://www.putty.org/"
+      },
+      {
+        "name": "",
+        "desc": "",
+        "img": "",
+        "href": ""
+      }
+    ],
+    "materials" : [
+      {
+        "title": "Learn SSH in 6 Minutes",
+        "type": "video",
+        "desc": "Secure Shell Protocol is un protocolo de conexion criptografico para ejecutar servicios de conexion seguros sobre una red insegura ...",
+        "img": "",
+        "href": "https://youtu.be/v45p_kJV9i4"
+      },
+      {
+        "title": "Serious Cryptography A Practical Introduction to Modern Encryption",
+        "type": "book",
+        "desc": "314 paginas de criptografía, a que no te lo esperabas",
+        "img": "",
+        "href": "https://theswissbay.ch/pdf/Books/Computer%20science/Cryptography/SeriousCryptography.pdf"
+      },
+      {
+        "title": "Cracking Codes with Python an Introduction to Building and Breaking Ciphers",
+        "type": "book",
+        "desc": "403 paginas de encriptacion con python, que bonito :3",
+        "img": "",
+        "href": "https://elhacker.info/manuales/Lenguajes%20de%20Programacion/Python/Cracking%20Codes%20with%20Python.pdf"
+      },
+      {
+        "title": "Operation Systems 1 - Introduction",
+        "type": "video",
+        "desc": "Introduccion a sistemas operativos :v , especialmente Linux",
+        "img": "",
+        "href": "https://youtu.be/5AjReRMoG3Y"
+      },
+      {
+        "title": "2 - Linux Core Commands",
+        "type": "video",
+        "desc": "Comandos de Linux :v",
+        "img": "",
+        "href": "https://youtu.be/LyKuUBKu6QI"
+      },
+      {
+        "title": "Introduction to Linux and Basic Linux Command for Begginers",
+        "type": "video",
+        "desc": "Linux :3",
+        "img": "",
+        "href": "https://youtu.be/IVquJh3DXUA"
+      },
+      {
+        "title": "Linux File System/Structure Explained",
+        "type": "video",
+        "desc": "Estructura del sistema de archivos de linux :v",
+        "img": "",
+        "href": "https://youtu.be/HbgzrKJvDRw"
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      }
+    ],
+    "courses": [
+      {
+        "name": "",
+        "desc": "",
+        "img": "",
+        "href": ""
+      }
+    ]
+  }
+}
