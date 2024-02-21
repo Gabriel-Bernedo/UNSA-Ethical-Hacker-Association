@@ -359,6 +359,10 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -432,6 +436,9 @@ video {
 .max-w-7xl {
   max-width: 80rem;
 }
+.max-w-screen-xl {
+  max-width: 1280px;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -500,6 +507,9 @@ video {
 .border-b {
   border-bottom-width: 1px;
 }
+.border-b-2 {
+  border-bottom-width: 2px;
+}
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219/ var(--tw-border-opacity));
@@ -510,6 +520,10 @@ video {
 .border-neutral-800 {
   --tw-border-opacity: 1;
   border-color: rgb(38 38 38/ var(--tw-border-opacity));
+}
+.border-indigo-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(79 70 229/ var(--tw-border-opacity));
 }
 .bg-gray-50 {
   --tw-bg-opacity: 1;
@@ -559,6 +573,10 @@ video {
 .object-cover {
   -o-object-fit: cover;
   object-fit: cover;
+}
+.object-center {
+  -o-object-position: center;
+  object-position: center;
 }
 .p-24 {
   padding: 6rem;
@@ -663,11 +681,18 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .font-bold {
   font-weight: 700;
 }
 .font-semibold {
   font-weight: 600;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -678,6 +703,18 @@ video {
 }
 .text-white\/95 {
   color: rgb(255 255 255/ 0.95);
+}
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128/ var(--tw-text-opacity));
+}
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81/ var(--tw-text-opacity));
+}
+.text-indigo-600 {
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229/ var(--tw-text-opacity));
 }
 .opacity-50 {
   opacity: 0.5;
@@ -840,6 +877,12 @@ body {
   }
 }
 @media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -851,6 +894,10 @@ body {
   }
   .sm\:pt-48 {
     padding-top: 12rem;
+  }
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
   .sm\:before\:w-\[480px\]::before {
     content: var(--tw-content);

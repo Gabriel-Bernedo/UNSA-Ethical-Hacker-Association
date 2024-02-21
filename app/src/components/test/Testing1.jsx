@@ -5,7 +5,7 @@ export default function Testing1() {
     <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
 		<div>
 			<article className="relative overflow-visible rounded-lg shadow transition hover:shadow-lg">
-				<img className="absolute inset-0 h-full w-full object-cover" src="../../../public/prueba.jpeg" alt="" />
+				<img className="absolute inset-0 h-full w-full object-cover" src="prueba.jpeg" alt="" />
 				<div className="relative rounded-e-2xl bg-gradient-to-t from-gray-900/50 from-gray-900/25  pt-32 sm:pt-48 lg:pt-64">
 					<div className="p-4 sm:p-6">
 						<h3 className="mt-0.5 text-lg text-white">Nuestra Pasìon:</h3>
@@ -23,7 +23,7 @@ export default function Testing1() {
 
 		<div>
 			<article className="relative overflow-visible rounded-lg shadow transition hover:shadow-lg">
-				<img className="absolute inset-0 h-full w-full object-cover" src="../../../public/imagen.jpeg" alt="" />
+				<img className="absolute inset-0 h-full w-full object-cover" src="/prueba.jpeg" alt="" />
 				<div className="relative bg-gradient-to-t from-gray-900/50 from-gray-900/25  pt-32 sm:pt-48 lg:pt-64">
 					<div className="p-4 sm:p-6">
 					<h3 className="mt-0.5 text-lg text-white">Nuestra Objetivo:</h3>
@@ -42,7 +42,7 @@ export default function Testing1() {
 
 		<div>
 			<article className="relative overflow-visible rounded-lg shadow transition hover:shadow-lg">
-				<img className="absolute inset-0 h-full w-full object-cover" src="../../../public/imagen.jpeg" alt="" />
+				<img className="absolute inset-0 h-full w-full object-cover" src="/prueba.jpeg" alt="" />
 				<div className="relative bg-gradient-to-t from-gray-900/50 from-gray-900/25  pt-32 sm:pt-48 lg:pt-64">
 					<div className="p-4 sm:p-6">
 					<h3 className="mt-0.5 text-lg text-white">Nuestra Mision:</h3>

@@ -94,7 +94,7 @@ function Testing1() {
                     children: [
                         /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("img", {
                             className: "absolute inset-0 h-full w-full object-cover",
-                            src: "../../../public/prueba.jpeg",
+                            src: "prueba.jpeg",
                             alt: ""
                         }, void 0, false, {
                             fileName: "<[project]/src/components/test/Testing1.jsx>",
@@ -150,7 +150,7 @@ function Testing1() {
                     children: [
                         /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("img", {
                             className: "absolute inset-0 h-full w-full object-cover",
-                            src: "../../../public/imagen.jpeg",
+                            src: "/prueba.jpeg",
                             alt: ""
                         }, void 0, false, {
                             fileName: "<[project]/src/components/test/Testing1.jsx>",
@@ -206,7 +206,7 @@ function Testing1() {
                     children: [
                         /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("img", {
                             className: "absolute inset-0 h-full w-full object-cover",
-                            src: "../../../public/imagen.jpeg",
+                            src: "/prueba.jpeg",
                             alt: ""
                         }, void 0, false, {
                             fileName: "<[project]/src/components/test/Testing1.jsx>",
@@ -280,53 +280,97 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$test$2f
 ;
 function page() {
     return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
-        className: "p-10",
         children: [
             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
-                className: "text-center text-5xl font-serif font-bold",
-                children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("h1", {
-                    children: "SOBRE NOSOTROS"
-                }, void 0, false, {
-                    fileName: "<[project]/src/app/about/page.jsx>",
-                    lineNumber: 8,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "<[project]/src/app/about/page.jsx>",
-                lineNumber: 7,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
-                className: "p-16 mx-9",
-                children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
-                    className: "mx-11",
-                    children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("p", {
-                        className: "text-justify text-2xl",
-                        children: "Somos un grupo de estudiantes apasionados y dedicados que hemos decidido aventurarnos en el fascinante mundo de la ciberseguridad. Procedentes de diversos orígenes académicos y experiencias, nos unimos bajo la bandera de la curiosidad y el deseo de aprender."
+                className: "sm:flex items-center max-w-screen-xl",
+                children: [
+                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "sm:w-1/2 p-10",
+                        children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                            className: "image object-center text-center",
+                            children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("img", {
+                                src: "/grupo.svg",
+                                alt: ""
+                            }, void 0, false, {
+                                fileName: "<[project]/src/app/about/page.jsx>",
+                                lineNumber: 11,
+                                columnNumber: 6
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "<[project]/src/app/about/page.jsx>",
+                            lineNumber: 10,
+                            columnNumber: 5
+                        }, this)
                     }, void 0, false, {
                         fileName: "<[project]/src/app/about/page.jsx>",
-                        lineNumber: 13,
-                        columnNumber: 11
+                        lineNumber: 9,
+                        columnNumber: 4
+                    }, this),
+                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "sm:w-1/2 p-5",
+                        children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                            className: "text",
+                            children: [
+                                /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                    className: "text-gray-500 border-b-2 border-indigo-600 uppercase",
+                                    children: "Sobre Nosotros"
+                                }, void 0, false, {
+                                    fileName: "<[project]/src/app/about/page.jsx>",
+                                    lineNumber: 16,
+                                    columnNumber: 6
+                                }, this),
+                                /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("h2", {
+                                    className: "my-4 font-bold text-3xl  sm:text-4xl ",
+                                    children: [
+                                        "Sobre ",
+                                        /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                            className: "text-indigo-600",
+                                            children: "Nuestro Grupo Shell"
+                                        }, void 0, false, {
+                                            fileName: "<[project]/src/app/about/page.jsx>",
+                                            lineNumber: 17,
+                                            columnNumber: 66
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "<[project]/src/app/about/page.jsx>",
+                                    lineNumber: 17,
+                                    columnNumber: 6
+                                }, this),
+                                /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"]("p", {
+                                    class: "text-gray-700",
+                                    children: "Somos un grupo de estudiantes apasionados y dedicados que hemos decidido aventurarnos en el fascinante mundo de la ciberseguridad. Procedentes de diversos orígenes académicos y experiencias, nos unimos bajo la bandera de la curiosidad y el deseo de aprender."
+                                }, void 0, false, {
+                                    fileName: "<[project]/src/app/about/page.jsx>",
+                                    lineNumber: 19,
+                                    columnNumber: 6
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "<[project]/src/app/about/page.jsx>",
+                            lineNumber: 15,
+                            columnNumber: 5
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "<[project]/src/app/about/page.jsx>",
+                        lineNumber: 14,
+                        columnNumber: 4
                     }, this)
-                }, void 0, false, {
-                    fileName: "<[project]/src/app/about/page.jsx>",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                ]
+            }, void 0, true, {
                 fileName: "<[project]/src/app/about/page.jsx>",
-                lineNumber: 11,
-                columnNumber: 7
+                lineNumber: 8,
+                columnNumber: 3
             }, this),
             /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$test$2f$Testing1$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/src/app/about/page.jsx>",
-                lineNumber: 18,
-                columnNumber: 7
+                lineNumber: 25,
+                columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/src/app/about/page.jsx>",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
