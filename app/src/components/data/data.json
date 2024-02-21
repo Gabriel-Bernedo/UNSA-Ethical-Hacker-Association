@@ -1,0 +1,25 @@
+{
+  "index": {
+    "nav": [
+      {
+        "title": "Mas Informacion",
+        "href": "/about",
+        "desc": "Descubre mas acerca de nosotros"
+      },
+      {
+        "title": "Noticias",
+        "href": "/news",
+        "desc": "Noticias recientes relacionadas con el grupo"
+      },
+      {
+        "title": "Recursos",
+        "href": "/resources",
+        "desc": "Recopilacion de materiales para ciberseguridad"
+      }
+    ],
+    "intro": {
+      "desc": "Bienvenido a UEHA (UNSA Ethical Hacker Association), actualmente somos un grupo de estudio enfocado a conceptos de ciberseguridad",
+      "img": "/next.svg"
+    }
+  }
+}
