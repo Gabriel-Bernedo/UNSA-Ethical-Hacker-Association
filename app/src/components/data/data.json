@@ -111,6 +111,27 @@
         "href": "https://youtu.be/HbgzrKJvDRw"
       },
       {
+        "title": "Linux Terminal Introduction",
+        "type": "video",
+        "desc": "Introducction a la terminal de Linux",
+        "img": "",
+        "href": "https://youtu.be/SkB-eRCzWIU",
+      },
+      {
+        "title": "Linux Command Line (07) Viewing Files (cat, more, less head, tail)",
+        "type": "video",
+        "desc": "Mas comandos de linux, para leer archivos",
+        "img": "",
+        "href": "https://youtu.be/msefiwMtZpA"
+      },
+      {
+        "title": "Linux Sysadmin Basics 4.1 - Filtering Output and Finding Things (&&, cut sort, uniq, wc, grep)",
+        "type": "video",
+        "desc": "description",
+        "img": "", 
+        "href": "https://youtu.be/nLa6jAbULe8"
+      },
+      {
         "title": "title",
         "type": "type",
         "desc": "description",
