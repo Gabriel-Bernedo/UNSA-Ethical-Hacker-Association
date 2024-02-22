@@ -19,7 +19,7 @@ export default function page() {
 					</div>
 				</div>
 				<div class="mt-12 md:mt-0">
-					<img className="object-cover rounded-lg shadow-md" src="/file.png" alt="" />
+					<img className="object-cover rounded-lg dark:drop-shadow-bitDark drop-shadow-bitLight" src="/file.png" alt="" />
 				</div>
 			</div>			
 		</VibringContainer>
