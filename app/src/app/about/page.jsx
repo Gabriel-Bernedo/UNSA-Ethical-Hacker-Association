@@ -1,12 +1,13 @@
 import React from 'react'
 import Testing1 from '@/components/test/Testing1'
+import VibringContainer from '@/components/ui/containers/VibringContainer'
 
 export default function page() {
   return (
 
     <div>
-		<div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
-			<div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+		<VibringContainer>
+			<div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 lg:m-16">
 				<div className="sm:w-1/1 p-5">
 					<div className="text">
 						<span className="text-gray-500 border-b-2 border-indigo-600 uppercase">Sobre Nosotros</span>
@@ -18,10 +19,10 @@ export default function page() {
 					</div>
 				</div>
 				<div class="mt-12 md:mt-0">
-                	<img className="object-cover rounded-lg shadow-md" src="/file.png" alt="" />
-            	</div>
-        	</div>			
-    	</div>
+					<img className="object-cover rounded-lg shadow-md" src="/file.png" alt="" />
+				</div>
+			</div>			
+		</VibringContainer>
 			<Testing1 />
 		<div className="mt-12 flex items-center justify-center gap-x-6">
 			<button type="button" className="text-md relative inline-flex items-center gap-x-2 rounded-lg bg-indigo-800 px-6 py-4 font-semibold text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
