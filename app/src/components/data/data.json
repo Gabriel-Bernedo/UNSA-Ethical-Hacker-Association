@@ -1,4 +1,7 @@
 {
+  "data": {
+    "name": "UNSA-Ethical-Hackers-Association"
+  },
   "index": {
     "nav": [
       {
@@ -23,6 +26,26 @@
     }
   },
   "resources": {
+    "nav": [
+      {
+        "title": "Herramientas",
+        "href": "/resources/tools",
+        "desc": "",
+        "img": ""
+      },
+      {
+        "title": "Materiales",
+        "href": "/resources/materials",
+        "desc": "",
+        "img": ""
+      },
+      {
+        "title": "Cursos",
+        "href": "/resources/courses",
+        "desc": "",
+        "img": ""
+      }
+    ],
     "tools": [
       {
         "name": "Putty",
