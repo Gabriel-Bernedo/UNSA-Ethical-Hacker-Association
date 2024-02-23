@@ -22,7 +22,7 @@
     ],
     "intro": {
       "desc": "Bienvenido a UEHA (UNSA Ethical Hacker Association), actualmente somos un grupo de estudio enfocado a conceptos de ciberseguridad",
-      "img": "/next.svg"
+      "img": "/file.png"
     }
   },
   "resources": {
@@ -115,7 +115,7 @@
         "type": "video",
         "desc": "Introducction a la terminal de Linux",
         "img": "",
-        "href": "https://youtu.be/SkB-eRCzWIU",
+        "href": "https://youtu.be/SkB-eRCzWIU"
       },
       {
         "title": "Linux Command Line (07) Viewing Files (cat, more, less head, tail)",
@@ -132,6 +132,76 @@
         "href": "https://youtu.be/nLa6jAbULe8"
       },
       {
+        "title": "Automate the Boring Stuff with Python",
+        "type": "catalogue",
+        "desc": "Cosas con python",
+        "img": "",
+        "href": "https://automatetheboringstuff.com/#toc"
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
         "title": "title",
         "type": "type",
         "desc": "description",
@@ -141,9 +211,21 @@
     ],
     "courses": [
       {
+        "name": "Cybersecurity Beginner Career Path (Online)",
+        "desc": "Introduccion a fundamentos de ciberseguridad y sistema operativo Linux",
+        "img": "/xd.png",
+        "href": "https://cybertalents.com/learn/cybersecurity-beginner-career-path"
+      },
+      {
         "name": "",
         "desc": "",
-        "img": "",
+        "img": "/xd.png",
+        "href": ""
+      },
+      {
+        "name": "",
+        "desc": "",
+        "img": "/xd.png",
         "href": ""
       }
     ]
