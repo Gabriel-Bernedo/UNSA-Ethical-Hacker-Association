@@ -1,24 +1,45 @@
 import React from "react";
 
+import Link from "next/link";
+
+const data = [
+    {
+        label: "Home",
+        href: "/",
+    },
+    {
+        label: "Nosotros",
+        href: "/about",
+    },
+    {
+        label: "Noticias",
+        href: "/news",
+    },
+    {
+        label: "Recursos",
+        href: "/resources",
+    },
+    {
+      label: "Contactos",
+      href: "#",
+  }
+]
+
 export default function Footer() {
   return (
     <footer class="flex flex-col space-y-10 justify-center m-10">
       <nav class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
-        <a class="hover:text-gray-900" href="#">
-          Home
-        </a>
-        <a class="hover:text-gray-900" href="#">
-          Nosotros
-        </a>
-        <a class="hover:text-gray-900" href="#">
-          Noticias
-        </a>
-        <a class="hover:text-gray-900" href="#">
-          Recursos
-        </a>
-        <a class="hover:text-gray-900" href="#">
-          Contacto
-        </a>
+        {data.map(function(e,i){
+          return (
+                  <Link
+                  key={i}
+                    className="hover:text-gray-900"
+                    href={e.href}
+                  > 
+                    {e.label} 
+                  </Link>
+          )
+       })}
       </nav>
 
      
