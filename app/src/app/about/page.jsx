@@ -10,10 +10,8 @@ export default function page() {
 
     <div>
 		<Nabvar />
-
 		<VibringContainer>
 			<div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 lg:m-16">
-
 				<div className="sm:w-1/1 p-5">
 					<div className="text">
 						<span className="text-gray-500 border-b-2 border-indigo-600 uppercase">Sobre Nosotros</span>
@@ -29,6 +27,7 @@ export default function page() {
 				</div>
 			</div>			
 		</VibringContainer>
+
 			<Testing1 />
 		<div className="mt-12 flex items-center justify-center gap-x-6">
 			<button type="button" className="text-md relative inline-flex items-center gap-x-2 rounded-lg bg-indigo-800 px-6 py-4 font-semibold text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600">
@@ -37,7 +36,7 @@ export default function page() {
 				<path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
 			</svg>
         </button>
-      </div>
+      	</div>
 	  <div>
 		<Footer />
 	  </div>
