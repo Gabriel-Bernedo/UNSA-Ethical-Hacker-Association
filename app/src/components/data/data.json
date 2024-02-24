@@ -1,0 +1,233 @@
+{
+  "data": {
+    "name": "UNSA-Ethical-Hackers-Association"
+  },
+  "index": {
+    "nav": [
+      {
+        "title": "Mas Informacion",
+        "href": "/about",
+        "desc": "Descubre mas acerca de nosotros"
+      },
+      {
+        "title": "Noticias",
+        "href": "/news",
+        "desc": "Noticias recientes relacionadas con el grupo"
+      },
+      {
+        "title": "Recursos",
+        "href": "/resources",
+        "desc": "Recopilacion de materiales para ciberseguridad"
+      }
+    ],
+    "intro": {
+      "desc": "Bienvenido a UEHA (UNSA Ethical Hacker Association), actualmente somos un grupo de estudio enfocado a conceptos de ciberseguridad",
+      "img": "/file.png"
+    }
+  },
+  "resources": {
+    "nav": [
+      {
+        "title": "Herramientas",
+        "href": "/resources/tools",
+        "desc": "",
+        "img": ""
+      },
+      {
+        "title": "Materiales",
+        "href": "/resources/materials",
+        "desc": "",
+        "img": ""
+      },
+      {
+        "title": "Cursos",
+        "href": "/resources/courses",
+        "desc": "",
+        "img": ""
+      }
+    ],
+    "tools": [
+      {
+        "name": "Putty",
+        "desc": "Emulador de terminal, consola Open-Source, aplicacion para transferencia de archivos, soporta SCP, SSH, Telnet, rlogin y raw socket connection",
+        "img": "",
+        "href": "https://www.putty.org/"
+      },
+      {
+        "name": "",
+        "desc": "",
+        "img": "",
+        "href": ""
+      }
+    ],
+    "materials" : [
+      {
+        "title": "Learn SSH in 6 Minutes",
+        "type": "video",
+        "desc": "Secure Shell Protocol is un protocolo de conexion criptografico para ejecutar servicios de conexion seguros sobre una red insegura ...",
+        "img": "",
+        "href": "https://youtu.be/v45p_kJV9i4"
+      },
+      {
+        "title": "Serious Cryptography A Practical Introduction to Modern Encryption",
+        "type": "book",
+        "desc": "314 paginas de criptografía, a que no te lo esperabas",
+        "img": "",
+        "href": "https://theswissbay.ch/pdf/Books/Computer%20science/Cryptography/SeriousCryptography.pdf"
+      },
+      {
+        "title": "Cracking Codes with Python an Introduction to Building and Breaking Ciphers",
+        "type": "book",
+        "desc": "403 paginas de encriptacion con python, que bonito :3",
+        "img": "",
+        "href": "https://elhacker.info/manuales/Lenguajes%20de%20Programacion/Python/Cracking%20Codes%20with%20Python.pdf"
+      },
+      {
+        "title": "Operation Systems 1 - Introduction",
+        "type": "video",
+        "desc": "Introduccion a sistemas operativos :v , especialmente Linux",
+        "img": "",
+        "href": "https://youtu.be/5AjReRMoG3Y"
+      },
+      {
+        "title": "2 - Linux Core Commands",
+        "type": "video",
+        "desc": "Comandos de Linux :v",
+        "img": "",
+        "href": "https://youtu.be/LyKuUBKu6QI"
+      },
+      {
+        "title": "Introduction to Linux and Basic Linux Command for Begginers",
+        "type": "video",
+        "desc": "Linux :3",
+        "img": "",
+        "href": "https://youtu.be/IVquJh3DXUA"
+      },
+      {
+        "title": "Linux File System/Structure Explained",
+        "type": "video",
+        "desc": "Estructura del sistema de archivos de linux :v",
+        "img": "",
+        "href": "https://youtu.be/HbgzrKJvDRw"
+      },
+      {
+        "title": "Linux Terminal Introduction",
+        "type": "video",
+        "desc": "Introducction a la terminal de Linux",
+        "img": "",
+        "href": "https://youtu.be/SkB-eRCzWIU"
+      },
+      {
+        "title": "Linux Command Line (07) Viewing Files (cat, more, less head, tail)",
+        "type": "video",
+        "desc": "Mas comandos de linux, para leer archivos",
+        "img": "",
+        "href": "https://youtu.be/msefiwMtZpA"
+      },
+      {
+        "title": "Linux Sysadmin Basics 4.1 - Filtering Output and Finding Things (&&, cut sort, uniq, wc, grep)",
+        "type": "video",
+        "desc": "description",
+        "img": "", 
+        "href": "https://youtu.be/nLa6jAbULe8"
+      },
+      {
+        "title": "Automate the Boring Stuff with Python",
+        "type": "catalogue",
+        "desc": "Cosas con python",
+        "img": "",
+        "href": "https://automatetheboringstuff.com/#toc"
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      }
+    ],
+    "courses": [
+      {
+        "name": "Cybersecurity Beginner Career Path (Online)",
+        "desc": "Introduccion a fundamentos de ciberseguridad y sistema operativo Linux",
+        "img": "/xd.png",
+        "href": "https://cybertalents.com/learn/cybersecurity-beginner-career-path"
+      },
+      {
+        "name": "",
+        "desc": "",
+        "img": "/xd.png",
+        "href": ""
+      },
+      {
+        "name": "",
+        "desc": "",
+        "img": "/xd.png",
+        "href": ""
+      }
+    ]
+  }
+}
