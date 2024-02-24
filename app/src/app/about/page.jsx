@@ -1,10 +1,13 @@
 import React from 'react'
 import Testing1 from '@/components/test/Testing1'
+import Footer from '@/components/test/Footer'
+import Nabvar from '@/components/test/Nabvar'
 
 export default function page() {
   return (
 
     <div>
+		<Nabvar />
 		<div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
 			<div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
 				<div className="sm:w-1/1 p-5">
@@ -31,8 +34,9 @@ export default function page() {
 			</svg>
         </button>
       </div>
+	  <div>
+		<Footer />
+	  </div>
 	</div>
-	
-
   )
 }
