@@ -1,13 +1,19 @@
 import React from 'react'
 import Testing1 from '@/components/test/Testing1'
+
+import Footer from '@/components/test/Footer'
+import Nabvar from '@/components/test/Nabvar'
 import VibringContainer from '@/components/ui/containers/VibringContainer'
 
 export default function page() {
   return (
 
     <div>
+		<Nabvar />
+
 		<VibringContainer>
 			<div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 lg:m-16">
+
 				<div className="sm:w-1/1 p-5">
 					<div className="text">
 						<span className="text-gray-500 border-b-2 border-indigo-600 uppercase">Sobre Nosotros</span>
@@ -32,8 +38,9 @@ export default function page() {
 			</svg>
         </button>
       </div>
+	  <div>
+		<Footer />
+	  </div>
 	</div>
-	
-
   )
 }
