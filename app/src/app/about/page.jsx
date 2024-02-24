@@ -17,7 +17,6 @@ export default function page() {
   return (
 		<Fragment>
 			<Nabvar />
-
 			<main className="overflow-hidden">
 
 				<VibringContainer>
@@ -56,6 +55,5 @@ export default function page() {
 				</div>
 			</main>
 	</Fragment>
-
   )
 }
