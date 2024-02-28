@@ -174,30 +174,30 @@
         "href": "https://youtu.be/_SxRZ4HMIBE"
       },
       {
-        "title": "title",
-        "type": "type",
+        "title": "How To Learn Hacking With CTFs",
+        "type": "video",
         "desc": "description",
         "img": "",
-        "href": ""
+        "href": "https://youtu.be/Lus7aNf2xDg"
       },
       {
-        "title": "title",
-        "type": "type",
+        "title": "Are CTFs even real? Featuring John Hammond",
+        "type": "video",
         "desc": "description",
         "img": "",
-        "href": ""
+        "href": "https://youtu.be/u4u6ob13s2c"
       },
       {
-        "title": "title",
-        "type": "type",
+        "title": "W3 Schools",
+        "type": "page",
         "desc": "description",
         "img": "",
-        "href": ""
+        "href": "https://www.w3schools.com/"
       },
       {
-        "title": "title",
-        "type": "type",
-        "desc": "description",
+        "title": "HTML5 Security Cheatsheet",
+        "type": "page",
+        "desc": "https://html5sec.org/",
         "img": "",
         "href": ""
       },
