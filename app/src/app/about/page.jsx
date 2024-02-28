@@ -11,9 +11,6 @@ const DownArrow = dynamic(() => import('@/components/ui/buttons/DownArrow'), {
 });
 
 export default function page() {
-
-	
-
   return (
 		<Fragment>
 			<Nabvar />
