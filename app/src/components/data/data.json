@@ -30,20 +30,20 @@
       {
         "title": "Herramientas",
         "href": "/resources/tools",
-        "desc": "",
-        "img": ""
+        "img": "/herramientas.jpg",
+        "desc": ""
       },
       {
         "title": "Materiales",
         "href": "/resources/materials",
-        "desc": "",
-        "img": ""
+        "img": "/material.jpg",
+        "desc": ""
       },
       {
         "title": "Cursos",
         "href": "/resources/courses",
-        "desc": "",
-        "img": ""
+        "img": "/cursos.avif",
+        "desc": ""
       }
     ],
     "tools": [
