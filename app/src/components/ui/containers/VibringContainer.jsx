@@ -25,8 +25,8 @@ export default function VibringContainer({children}) {
 
       before:transition before:duration-300 before:delay-100
       before:ease-in-out
-      after:transition after:duration-500 after:delay-75
-      after:ease-in
+      after:transition after:duration-300 after:delay-75
+      after:ease-in-out
       z-[10] before:z-[-1]"
     >
       {children}
