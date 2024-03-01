@@ -229,5 +229,21 @@
         "href": ""
       }
     ]
+  },
+  "about": {
+    "info": [
+      {
+        "title": "Nuestra Pasìon:",
+        "desc": " La ciberseguridad no es solo una disciplina para nosotros; es una pasión que impulsa cada uno de nuestros pasos. Nos emociona explorar los entresijos de la seguridad digital, comprender las amenazas emergentes y desarrollar habilidades que nos permitan proteger sistemas y datos vitales en un mundo cada vez más interconectado."
+      },
+      {
+        "title": "Nuestro Objetivo:",
+        "desc": "En el Grupo Shell, creemos en el poder del aprendizaje continuo. Nos esforzamos por adquirir nuevos conocimientos, dominar herramientas y técnicas, y compartir nuestras experiencias. Nuestro objetivo es no solo mejorar nuestras habilidades individuales, sino también fomentar un ambiente de colaboración donde todos puedan crecer juntos."
+      },
+      {
+        "title": "Nuestra Mision:",
+        "desc": "Como estudiantes en el campo de la ciberseguridad, estamos comprometidos a estar en la vanguardia de la protección digital. Buscamos identificar y abordar las últimas amenazas y vulnerabilidades, desarrollar soluciones innovadoras y promover prácticas de seguridad sólidas en todos los aspectos de la vida digital, y participar en respectivos eventos CTF."
+      }
+    ]
   }
 }
