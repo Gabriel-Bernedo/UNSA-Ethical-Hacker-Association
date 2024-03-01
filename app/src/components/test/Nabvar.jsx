@@ -22,7 +22,7 @@ const data = [
 
 export default function Nabvar() {
     return (
-        <header class="z-50  flex flex-col items-center justify-between max-w-full md:max-w-4xl px-2 md:px-6 py-12 mx-auto md:flex-row sticky top-0">
+        <header class="z-50  flex flex-col items-center justify-between max-w-full md:max-w-4xl px-2 md:px-6 py-12 mx-auto md:flex-row top-0">
             <a href="/" class="text-indigo-900 z-10 active">
                 <img src="/file.png" alt="" class="w-24 py-8 md:py-0 g-image drop-shadow-bitDark"/>
             </a>
