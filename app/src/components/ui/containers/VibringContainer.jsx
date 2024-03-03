@@ -17,7 +17,6 @@ export default function VibringContainer({children}) {
       before:dark:bg-gradient-to-br before:dark:from-transparent 
       before:dark:to-blue-700 before:dark:opacity-10 
       before:dark:hover:to-blue-500
-      
 
       after:dark:from-sky-900 after:dark:via-[#0141ff] 
       after:dark:opacity-40 before:lg:h-[360px] 
