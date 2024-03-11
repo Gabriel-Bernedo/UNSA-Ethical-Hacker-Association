@@ -13,6 +13,8 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "cyber-cover": "url('/prueba.jpeg') ",
+        "anime-cover": "url('/anime.jpg')",
+        "anime-cover-2": "url('/img.webp')",
       },
       dropShadow: {
         "bitLight" : '0 10px 10px rgba(125, 70, 255, 0.25)',

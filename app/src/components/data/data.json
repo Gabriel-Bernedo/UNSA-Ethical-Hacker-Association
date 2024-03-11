@@ -54,6 +54,149 @@
         "href": "https://www.putty.org/"
       },
       {
+        "name": "JSF",
+        "desc": "JavaScrips as Fuck, Ininteligible JS, para quien no conozca: los browser tambien compila",
+        "img": "",
+        "href": "https://jsfuck.com/"
+      },
+      {
+        "name": "Javascript Obfuscate and Encoder",
+        "desc": "Obfuscate JS :3",
+        "img": "",
+        "href": "https://www.cleancss.com/javascript-obfuscate/index.php"
+      },
+      {
+        "name": "JavaScript Obfuscator Tool",
+        "desc": "JS, pero dificil de entender :v",
+        "img": "",
+        "href": "https://obfuscator.io/"
+      },
+      {
+        "name": "AEM1K",
+        "desc": "Una pagina con una recopilacion de herramientas para JS",
+        "img": "",
+        "href": "https://aem1k.com/"
+      },
+      {
+        "name": "JStillery",
+        "desc": "Deobfuscating JS tool",
+        "img": "",
+        "href": "https://mindedsecurity.github.io/jstillery/"
+      },
+      {
+        "name": "Deobfuscate Javascript",
+        "desc": "Make unreadeable JS to a readable format",
+        "img": "",
+        "href": "http://deobfuscatejavascript.com/"
+      },
+      {
+        "name": "Beautifier.io",
+        "desc": "Make unreadeable code into a readable format (HTML, CSS, JS, React, JSON)",
+        "img": "",
+        "href": "https://beautifier.io/"
+      },
+      {
+        "name": "Burp Suite Community Edition",
+        "desc": "",
+        "img": "",
+        "href": "https://portswigger.net/burp/communitydownload"
+      },
+      {
+        "name": "XSS-proxy",
+        "desc": "",
+        "img": "",
+        "href": "https://xss-proxy.sourceforge.net/"
+      },
+      {
+        "name": "Post Swigger",
+        "desc": "",
+        "img": "",
+        "href": "https://portswigger.net/"
+      },{
+        "name": "Category:OWASP DirBuster Project",
+        "desc": "",
+        "img": "",
+        "href": "https://wiki.owasp.org/index.php/Category:OWASP_DirBuster_Project"
+      },
+      {
+        "name": "Injection Patterns",
+        "desc": "",
+        "img": "",
+        "href": "https://github.com/xmendez/wfuzz/blob/master/wordlist/Injections/Traversal.txt"
+      },
+      {
+        "name": "Git Tools",
+        "desc": "",
+        "img": "",
+        "href": "https://github.com/internetwache/GitTools"
+      },
+      {
+        "name": "Commix",
+        "desc": "",
+        "img": "",
+        "href": "sessionareawesomebutifitsecure"
+      },
+      {
+        "name": "SQL Injection Fuzz Strings",
+        "desc": "",
+        "img": "",
+        "href": "https://github.com/fuzzdb-project/fuzzdb/tree/master/attack/sql-injection"
+      },
+      {
+        "name": "SQL Map",
+        "desc": "",
+        "img": "",
+        "href": "https://sqlmap.org/"
+      },
+      {
+        "name": "Stegsolve ",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "SonicVisualiser ",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "DeepSound Audio stego",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "Steghide",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "wave",
+        "desc": "Libreria de python para introducir mensajes espectográficos en un audio",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "Audacity",
+        "desc": "Programa para editar audio : tambien como una alternativa para visualizar espectogramas en los audios",
+        "img": "",
+        "href": "https://www.audacityteam.org/"
+      },
+      {
+        "name": "",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
         "name": "",
         "desc": "",
         "img": "",

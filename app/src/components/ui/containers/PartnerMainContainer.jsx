@@ -10,7 +10,14 @@ const location = {
 
 export default function PartnerMainContainer({href, label, imgName, side}) {
   return (
-    <div className={location[side] + `fixed flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none"`}>
+    <div 
+      className={`${location[side]} 
+        fixed h-48 w-full
+        flex items-end justify-center  
+        bg-gradient-to-t from-black via-black 
+        lg:static lg:h-auto lg:w-auto lg:bg-none"
+        `}
+      >
       <PartnerMainLink href={href} label={label} imgName={imgName}/>      
     </div>
   )
