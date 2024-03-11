@@ -137,6 +137,60 @@
         "href": "sessionareawesomebutifitsecure"
       },
       {
+        "name": "SQL Injection Fuzz Strings",
+        "desc": "",
+        "img": "",
+        "href": "https://github.com/fuzzdb-project/fuzzdb/tree/master/attack/sql-injection"
+      },
+      {
+        "name": "SQL Map",
+        "desc": "",
+        "img": "",
+        "href": "https://sqlmap.org/"
+      },
+      {
+        "name": "Stegsolve ",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "SonicVisualiser ",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "DeepSound Audio stego",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "Steghide",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "wave",
+        "desc": "Libreria de python para introducir mensajes espectográficos en un audio",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "Audacity",
+        "desc": "Programa para editar audio : tambien como una alternativa para visualizar espectogramas en los audios",
+        "img": "",
+        "href": "https://www.audacityteam.org/"
+      },
+      {
+        "name": "",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
         "name": "",
         "desc": "",
         "img": "",

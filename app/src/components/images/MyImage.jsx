@@ -15,7 +15,14 @@ const data = {
     src: "/file.png",
     alt: "UEHA",
     width: 180,
-    height: 37
+    height: 180
+  },
+  "logo-item" : {
+    className: "relative dark:drop-shadow-bitLight dark:invert",
+    src: "/file.png",
+    alt: "UEHA",
+    width: 80,
+    height: 80
   },
   "unsa": {
     src:"/unsa-logo.png",
@@ -26,10 +33,10 @@ const data = {
   "vercel": {
     src:"/vercel.svg",
     alt:"Vercel Logo",
-    className:"dark:invert",
+    className:"invert",
     width:100,
     height:24
-}
+  },
 }
 
 export default function MyImage({imgName}) {
