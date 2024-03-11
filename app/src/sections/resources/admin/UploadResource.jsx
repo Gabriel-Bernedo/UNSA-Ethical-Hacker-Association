@@ -14,23 +14,22 @@ function useResource(){
 
   function setResource({name, type, href, desc, img}){
     rawSetResource({name, type, href, desc, img})
-    console.log()
+    console.log(JSON.stringify(resource))
   }
-
   return {resource , setResource}
 } // Activa el uso del objeto recurso
 
 function useResourceAttr(){
   const {resource, setResource} = useResource(),
-    name = useRef(0),
-    type = useRef(0),
-    href = useRef(0),
-    desc = useRef(0),
-    img = useRef(0)
+    name = useRef(null),
+    type = useRef(null),
+    href = useRef(null),
+    desc = useRef(null),
+    img = useRef(null)
 
   function setResourceAttr(){
     setResource({
-      name: name.current?.value,
+      name: name.current.value,
       type: type.current?.value,
       href: href.current?.value,
       desc: desc.current?.value,
