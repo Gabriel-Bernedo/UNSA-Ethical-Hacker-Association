@@ -1,6 +1,4 @@
-'use client'
-import { useEffect, useState } from 'react';
-import { useRef } from 'react';
+
 
 /*function useResource(){
     const rdata = [rname, type, href, desc, img] = 
@@ -23,8 +21,6 @@ import { useRef } from 'react';
 import UploadResource from '@/sections/resources/admin/UploadResource';
 
 export default function page() {
-    const formJ = useRef("")
-    const form = formJ.current;
     //const {rname, type, href, desc, img} = useResource()
  /*
     window.onload = function() {
@@ -46,7 +42,7 @@ export default function page() {
             {/*<img src="/img.webp" alt="Placeholder Image" class="object-cover w-full h-[895px]"/>*/}
         </div>
         {/* <!-- Login --> */}
-        <UploadResource form={formJ}/>
+        <UploadResource/>
     </main>
     )
 }

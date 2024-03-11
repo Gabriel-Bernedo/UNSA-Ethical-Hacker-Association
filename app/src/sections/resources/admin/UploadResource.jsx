@@ -50,7 +50,7 @@ function useResourceAttr(){
   }
 } // Prepara el uso de los atributos de recurso
 
-export default function UploadResource({formJ}) {
+export default function UploadResource() {
   const {name, type, href, desc, img, 
     setResourceAttr, cleanResourceAttr} = useResourceAttr()  
 
@@ -73,7 +73,7 @@ export default function UploadResource({formJ}) {
         <h2 class="block text-indigo-500 text-center font-bold uppercase text-2xl">Subir Recursos</h2>
         <MyImage imgName="logo-item" />
       </div>
-      <form className="p-2" ref={formJ} onSubmit={SubmitHandler}>
+      <form className="p-2" onSubmit={SubmitHandler}>
         <Input label="Nombre Recurso">
           <input 
             ref={name}
