@@ -17,7 +17,12 @@ const data = [
     {
         label: "Recursos",
         href: "/resources",
-    }
+    },
+    {
+        label: "Contacto",
+        href: "/contact",
+    },
+ 
 ]
 
 export default function Nabvar() {
@@ -40,7 +45,7 @@ export default function Nabvar() {
                         )
                     })}
                     <li>
-                        <a href="" >Contactos</a>
+                        <a href="/login" >Login</a>
                     </li>
                 </ul>
             </nav>
