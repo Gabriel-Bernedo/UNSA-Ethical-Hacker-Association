@@ -1,13 +1,26 @@
-import {NextRequest, NextResponse} from "next/server"
-import {promises as fs} from 'fs'
-export async function GET (request){
-  const greeting = "Hello World!!"
-  const data = {greeting}
- 
-    const json = {
-        greeting,
-        message: "testing my app api :P"
-    };
-  console.log("------------------------")
-    return NextResponse.json(json);
+import {NextResponse} from "next/server"
+
+const BASE_URL = "http:localhost:3000" 
+
+function route(endpoint){
+  return `${BASE_URL}${endpoint}`
+}
+export async function GET (){
+  const routes = {
+    user : {
+      URL: route("/user"),
+      methods: [
+        "GET", 
+        "POST",
+      ]
+    },
+    resource: {
+      URL: route("/resource"),
+      methods: [
+        "GET",
+        "POST"
+      ]
+    }
+  }
+  return NextResponse.json(routes);
 }
