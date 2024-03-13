@@ -21,6 +21,19 @@ export default function CourseContainer({data}) {
         <h2 className="text-xl font-semibold"> {data.name} </h2>
         <p className="text-sm opacity-50"> {data.desc}</p>
       </div>
+      <div class="flex flex-wrap mt-10 justify-center">
+        <div class="m-3">
+            <a href="#" class="md:w-32 bg-amber-600 tracking-wide text-white font-bold rounded border-2 hover:border-amber-700 hover:bg-amber-700 hover:text-white shadow-md py-2 px-6 inline-flex items-center">
+                <span class="mx-auto">Editar</span>                    
+            </a>
+        </div>
+        
+        <div class="m-3">
+            <a href="#" class="md:w-32 bg-red-500 tracking-wide text-white font-bold rounded border-2 border-red-700 hover:border-red-700 hover:bg-red-700 hover:text-white shadow-md py-2 px-6 inline-flex items-center">
+                <span class="mx-auto">Eliminar</span>
+            </a>
+        </div>
+        </div>
     </Link>
   )
 }

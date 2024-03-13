@@ -15,6 +15,7 @@ module.exports = {
         "cyber-cover": "url('/prueba.jpeg') ",
         "anime-cover": "url('/anime.jpg')",
         "anime-cover-2": "url('/img.webp')",
+        "anime-cover-3": "url('/arch.jpeg')",
       },
       dropShadow: {
         "bitLight" : '0 10px 10px rgba(125, 70, 255, 0.25)',
