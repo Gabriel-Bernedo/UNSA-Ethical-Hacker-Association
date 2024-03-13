@@ -5,6 +5,7 @@ const BASE_URL = "http:localhost:3000"
 function route(endpoint){
   return `${BASE_URL}${endpoint}`
 }
+
 export async function GET (){
   const routes = {
     user : {
