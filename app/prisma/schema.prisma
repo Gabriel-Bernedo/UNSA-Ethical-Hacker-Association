@@ -1,0 +1,73 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            Int     @id @default(autoincrement())
+  email         String  @unique
+  name          String?
+  password      String  @default("password")
+  roles         RoleAssignment[]
+  resources     Resource[]
+}
+
+model Role {
+  id            Int     @id @default(autoincrement())
+  name          String
+  details       String
+  //published     Boolean @default(false)
+  users         RoleAssignment[]
+  permissions   PermissionAssignment[]
+}
+
+model RoleAssignment {
+  id            Int  @id @default(autoincrement())
+  user          User @relation(fields: [userId], references: [id])
+  userId        Int
+  role          Role @relation(fields: [roleId], references: [id])
+  roleId        Int
+}
+
+model Permission{
+  id            Int @id @default(autoincrement())
+  name          String
+  details       String
+  roles         PermissionAssignment[]
+}
+
+model PermissionAssignment{
+  id            Int @id @default(autoincrement())
+  role          Role @relation(fields: [roleId], references: [id])
+  roleId        Int
+  permission    Permission @relation(fields: [permissionId], references: [id])
+  permissionId  Int
+}
+
+model Resource{
+  id            Int @id @default(autoincrement())
+  name          String
+  details       String?
+  href          String
+  imgRef        String?
+  visible       Boolean @default(true)
+  resourceType  ResourceType @relation(fields: [type], references: [id])
+  type          Int
+  author        User @relation(fields: [authorId], references: [id])
+  authorId      Int
+}
+
+model ResourceType {
+  id            Int @id @default(autoincrement())
+  name          String
+  resource      Resource[]
+}
+
+
