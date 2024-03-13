@@ -5,9 +5,9 @@ export default function page() {
     
     return (
         <Fragment>
-        <div class="flex flex-wrap mt-10 justify-center">
+        <div class="flex flex-wrap mt-10 justify-center z-50">
             <div class="m-3">
-                <button class="bg-amber-500 text-white rounded-md px-4 py-2 hover:bg-amber-700 transition" onclick="openModal('modelConfirm')">
+                <button class="bg-amber-500 text-white rounded-md px-4 py-2 hover:bg-amber-700 transition" onclick="">
                     Editar
                 </button>
             </div>
