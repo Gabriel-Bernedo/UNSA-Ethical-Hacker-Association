@@ -1,18 +1,23 @@
-import {NextRequest, NextResponse} from "next/server"
-import {promises as fs} from 'fs'
-import { PrismaClient } from "@prisma/client"
+import {NextResponse} from "next/server"
+import prisma from "@/database/prisma"
 
 
-export async function GET (req, params){
-  const greeting = "Hello World!!"
-  const data = {greeting}
- 
-    const json = {
-        greeting,
-        message: "testing my app api :P"
-    };
-  console.log("------------------------")
-    return NextResponse.json(json);
+export async function GET (req){
+  const {searchParams} = new URL(req.url)
+  let data
+  console.log(searchParams)
+  if(searchParams) {
+    const user = prisma.user.findUnique({
+      where: {
+        
+      }
+    })
+    data = await prisma.user.findMany()
+  } else {
+    data = {msg: "No tiene permisos suficientes"}
+  }
+  prisma.$disconnect()
+  return NextResponse.json(data);
 }
 
 export async function POST(req, data){

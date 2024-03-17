@@ -173,6 +173,12 @@
         "href": ""
       },
       {
+        "name": "Steganography Road Map",
+        "desc": "Roadmap para aprender algunos fundamentos de esteganografía",
+        "img": "",
+        "href": "https://wiki.bi0s.in/steganography/roadmap/"
+      },
+      {
         "name": "wave",
         "desc": "Libreria de python para introducir mensajes espectográficos en un audio",
         "img": "",
@@ -185,10 +191,10 @@
         "href": "https://www.audacityteam.org/"
       },
       {
-        "name": "",
-        "desc": "",
+        "name": "Spam Mimic",
+        "desc": "Hace pasar data como spam",
         "img": "",
-        "href": ""
+        "href": "https://www.spammimic.com/"
       },
       {
         "name": "",
