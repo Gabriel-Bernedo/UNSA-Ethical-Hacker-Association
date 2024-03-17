@@ -18,7 +18,7 @@ const data = {
     height: 180
   },
   "logo-item" : {
-    className: "relative dark:drop-shadow-bitLight dark:invert",
+    className: "relative dark:drop-shadow-bitDark",
     src: "/file.png",
     alt: "UEHA",
     width: 80,
