@@ -15,6 +15,7 @@ export default function page() {
             </MyPopup>
             <MyPopup
                 trigger={DeleteResource}
+                className={"border-solid border-4 border-gray-500 rounded-lg shadow relative max-w-sm bg-white"}
             >
                 {({close}) => <DeletePanel onReject={close}/>}
             </MyPopup>            
