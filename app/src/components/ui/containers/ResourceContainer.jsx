@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Banner from '@/components/ui/containers/Banner'
 
 export default function ResourceContainer({data}) {
-  return (  
+  return (
     <div
       className="group rounded-lg border border-transparent px-4 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
     >
@@ -30,7 +30,6 @@ export default function ResourceContainer({data}) {
           {data.type}
         </p>
       </div>
-     
     </Link>
         <Banner />
     </div>
