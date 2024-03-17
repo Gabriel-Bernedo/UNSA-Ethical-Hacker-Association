@@ -63,13 +63,13 @@ model Resource{
   imgRef        String?
   visible       Boolean @default(true)
   resourceType  ResourceType @relation(fields: [type], references: [id])
-  type          String
+  type          Int
   author        User @relation(fields: [authorId], references: [id])
   authorId      String
 }
 
 model ResourceType {
-  id            String @id @default(cuid())
+  id            Int @id @default(autoincrement())
   name          String
   resource      Resource[]
 }
