@@ -25,7 +25,7 @@ export async function POST(req){
   // const params = data.params
   // const prisma = new PrismaClient()
   // const user = prisma.user.findUnique({
-  //   where: {
+  //   where: {>>>>>>> backend
   //     name: params.name,
   //     password : params.password,
   //   }
