@@ -5,7 +5,7 @@ import Hero from "@/sections/index/Hero";
 import MyBar from "@/components/ui/bars/MyBar";
 import MyImage from "@/components/images/MyImage";
 
-function Home() {
+export default function Home() {
     return (
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <Top/>
@@ -19,7 +19,7 @@ function Home() {
   }
 
 // export default 
-export default function LandingPage(){
+function LandingPage(){
     return (
       <main>
         Hola que pasho ?
