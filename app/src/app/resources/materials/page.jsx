@@ -3,6 +3,7 @@ import VibringContainer from '@/components/ui/containers/VibringContainer'
 import ResourceContainer from '@/components/ui/containers/ResourceContainer'
 import { resources } from '@/components/data/data'
 import Nabvar from '@/components/test/Nabvar'
+
 export default function page() {
   return (
     <Fragment>

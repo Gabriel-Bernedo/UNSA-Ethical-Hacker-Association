@@ -9,6 +9,7 @@ const InputClassName = "w-full bg-black py-3 px-6 my-1 " +
   "text-base font-medium text-[#ffffff] outline-none " + 
   "focus:border-[#6A64F1] focus:shadow-md "
 
+
 function useResource(){
   const [resource, rawSetResource] = useState({})
 
@@ -16,6 +17,7 @@ function useResource(){
     rawSetResource({name, type, href, desc, img})
     console.log(JSON.stringify(resource))
   }
+
   return {resource , setResource}
 } // Activa el uso del objeto recurso
 

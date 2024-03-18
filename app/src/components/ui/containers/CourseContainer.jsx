@@ -1,11 +1,15 @@
+'use client'
 import React, { Fragment } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Banner from '@/components/ui/containers/Banner'
 
 export default function CourseContainer({data}) {
   return (
+    <div
+      className="group rounded-lg border border-transparent px-4 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    >
     <Link 
-      className='align-items-center justify-items-center grid grid-cols-4 my-4 group rounded-lg border border-transparent px-4 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
       href={data.href}
       target="_blank"
       rel="noopener noreferrer"
@@ -22,5 +26,8 @@ export default function CourseContainer({data}) {
         <p className="text-sm opacity-50"> {data.desc}</p>
       </div>
     </Link>
+      <Banner />
+    </div>
+
   )
 }
