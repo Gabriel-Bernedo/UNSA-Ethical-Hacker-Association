@@ -4,7 +4,7 @@ import InfoCard from '@/components/ui/cards/InfoCard'
 
 export default function Info() {
   return (
-    <div className="mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3 p-2">
       {about.info.map(function(e,i){
         return (<InfoCard data={e} key={i}/>)
       })}
