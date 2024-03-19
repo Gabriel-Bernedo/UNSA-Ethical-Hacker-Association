@@ -15,7 +15,7 @@ export default function LandingPage(){
                             
                         </div>
                         <div className="md:w-1/2">
-                            <img src="/fondo.jpg" alt="Hack"
+                            <img src="/fondo.webp" alt="Hack"
                                 className="rounded-lg shadow-lg" />
                         </div>
                     </div>
