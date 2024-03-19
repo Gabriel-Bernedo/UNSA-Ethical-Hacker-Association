@@ -17,10 +17,10 @@ module.exports = withMT({
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "cyber-cover": "url('/prueba.jpeg') ",
-        "anime-cover": "url('/anime.jpg')",
+        "cyber-cover": "url('/prueba.webp') ",
+        "anime-cover": "url('/anime.webp')",
         "anime-cover-2": "url('/img.webp')",
-        "anime-cover-3": "url('/arch.jpeg')",
+        "anime-cover-3": "url('/arch.webp')",
       },
       dropShadow: {
         "bitLight" : '0 10px 10px rgba(125, 70, 255, 0.25)',

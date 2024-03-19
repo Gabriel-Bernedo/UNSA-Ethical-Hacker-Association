@@ -7,7 +7,7 @@ export default function LandingPage(){
 		<div id="Conocimiento" className="p-5 flex justify-center">
 			<Carousel className="rounded-xl w-3/4">
 				<div className="relative h-full w-full">
-					<img src="./criptografia.png" alt="image 1" className="h-[580px] w-full object-cover"/>
+					<img src="./criptografia.webp" alt="image 1" className="h-[580px] w-full object-cover"/>
 					<div className="absolute inset-0 grid h-full w-full place-items-start bg-black/75">
 					<div className="p-8 pl-5 mb-20 w-1/2 text-start ">
 						<Typography
@@ -36,7 +36,7 @@ export default function LandingPage(){
 				</div>
 				<div className="relative h-full w-full">
 					<img
-					src="./hashing.png"
+					src="./hashing.webp"
 					alt="image 2"
 					className="h-full w-full object-cover"
 					/>
@@ -68,7 +68,7 @@ export default function LandingPage(){
 				</div>
 				<div className="relative h-full w-full">
 					<img
-					src="./esteganografia.jpg"
+					src="./esteganografia.webp"
 					alt="image 3"
 					className="h-[580px] w-full object-cover"
 					/>
