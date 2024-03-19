@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+import animations from '@midudev/tailwind-animations'
+
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    // "./node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
+    // "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -28,8 +33,6 @@ module.exports = {
           '0 10px 10px rgba(100, 255, 255, 0.25)',
           "0 12.5px 12.5px rgba(100, 255, 255, 0.5)",
         ],
-        
-
       },
       colors: {
         "primary" : "#000",
@@ -37,5 +40,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
-};
+  plugins: [animations],
+})
