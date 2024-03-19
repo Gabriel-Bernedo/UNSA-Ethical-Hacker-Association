@@ -11,7 +11,7 @@ export default function LandingPage(){
                     <div className="flex flex-col md:flex-row items-center justify-between">
                         <div className="md:w-1/2 mb-8 md:mb-0">
                             <h1 className= "text-4xl lg:text-5xl xl:text-6xl font-bold leading-nones animate-blurred-fade-in">Bienvenido a UNSA Ethical Hacking - UEHA</h1>
-                            <p className="text-xl lg:text-2xl mt-6 font-light animate-blurred-fade-in">"Lo que creemos que ya sabemos es a menudo lo que previene que aprendamos"</p>
+                            <p className="text-xl lg:text-2xl mt-6 font-light animate-blurred-fade-in">&quot; Lo que creemos que ya sabemos es a menudo lo que previene que aprendamos &quot;</p>
                             
                         </div>
                         <div className="md:w-1/2">
