@@ -21,8 +21,12 @@ const padDefault = (
 export default function CTF() {
   const [padContent, setPadContent] = useState(padDefault)
 
-  function handleSetPadContent(Content){
+  function handleLabOpen(Content){
     setPadContent(<Content/>)
+  }
+
+  function handleLabClose(){
+    setPadContent(padDefault)
   }
 
   return (
@@ -47,10 +51,13 @@ export default function CTF() {
                 pues aqui algunos pequeños ejercicios para que practiques
               </p>
             </div>
-            <CTFLab onLabClick={handleSetPadContent}/>
+            <CTFLab 
+              onLabOpen={handleLabOpen}
+              onLabClose={handleLabClose}
+            />
           </div>
         </section>
-        <div className='rounded-lg bg-primary-1 center p-8 m-8'>
+        <div className='rounded-lg bg-primary-1 center p-8 m-8 h-min-full'>
           {padContent}
         </div>
       </div>
