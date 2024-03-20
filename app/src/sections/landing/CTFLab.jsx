@@ -5,7 +5,7 @@ import { Button } from '@material-tailwind/react'
 import { Fragment } from 'react'
 export default function CTFLab({onLabOpen, onLabClose}) {
   return (
-    <div className="grid grid-cols-3 gap-4 p-4">
+    <div className="gap-4 p-4 flex justify-center">
       <LabCTF
           label="Bienvenida a CTF!!!"
           flag="Bienvenido"
@@ -20,6 +20,7 @@ export default function CTFLab({onLabOpen, onLabClose}) {
            <p className="opacity-70">
              Formato de las FLAGS que vamos a usar ({flag})
            </p>
+           
          </Fragment>
           }
       </LabCTF>

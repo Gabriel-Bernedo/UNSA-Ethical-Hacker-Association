@@ -24,6 +24,7 @@ module.exports = withMT({
         "wallpaper-1": "url('/wallpapers/main.jpg')",
         // "wallpaper-2": "url('/wallpapers/spacial.jpg')",
         "wallpaper-crypto": "url('/wallpapers/crypto.webp')",
+        "wallpaper-ins": "url('/wallpapers/ins.webp')",
         "wallpaper-steg": "url('/wallpapers/steg.webp')",
         "wallpaper-hash": "url('/wallpapers/hash.webp')",
       },

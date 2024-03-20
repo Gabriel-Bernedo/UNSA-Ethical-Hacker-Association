@@ -18,7 +18,7 @@ const PadDefault = () => (
     </div>
   </Fragment>
 )
-export default function CTF() {
+export default function sCTF() {
   const [padContent, setPadContent] = useState(<PadDefault/>)
 
   function handleLabOpen(Content){
@@ -47,8 +47,8 @@ export default function CTF() {
                 UEHA - CTF - LAB
               </h1>
               <p>
-                No te ves lo suficientemente preparado ? <br />
-                pues aqui algunos pequeños ejercicios para que practiques
+                ¿ No te ves lo suficientemente preparado ? <br />
+                Pues aqui algunos pequeños ejercicios para que practiques
               </p>
             </div>
             <CTFLab 
