@@ -11,6 +11,9 @@ import More from "@/sections/landing/More";
 import Carousel from "@/sections/landing/Carousel";
 import Footer from "@/sections/landing/Footer";
 import CTF from "../sections/landing/CTF";
+
+
+
  function Home() {
     return (
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -27,7 +30,7 @@ import CTF from "../sections/landing/CTF";
 // export default 
 export default function LandingPage(){
     return (
-      <Fragment>
+
       <main>
         <About/>
         <Abot/>
@@ -36,7 +39,6 @@ export default function LandingPage(){
         <CTF/>
         <Footer />
       </main>
-      </Fragment>
     )
 }
 

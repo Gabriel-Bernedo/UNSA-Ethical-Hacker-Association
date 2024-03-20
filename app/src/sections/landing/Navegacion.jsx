@@ -1,32 +1,51 @@
+'use client'
 import React from 'react'
+import Image from 'next/image'
+const navigation = [
+    {
+        label: "Home",
+        href: "./#Home",
+    },
+    {
+        label: "Nosotros",
+        href: "./#Nosotros",
+        className: "sm:none"
+    },
+    {
+        label: "Informacion",
+        href: "./#Informacion",
+    },
+    {
+        label: "Conocimiento",
+        href: "./#Conocimiento",
+        className: "sm:none"
+    },
+    {
+        label: "CTF",
+        href: "./#CTF",
+        className : "",
+    }
+]
 
 export default function LandingPage(){
     return (
-        <main className="overflow-hidden bg-slate-800 p-2">
-            <header class="flex flex-col items-center justify-between max-w-full md:max-w-6xl px-2 md:px-6 py-12 mx-auto md:flex-row">
-                <a href="/" class="text-indigo-900 z-10 active">
-                    <img src="/file.png" class="w-24 py-8 md:py-0 g-image" />
+            <header className="flex flex-col items-center justify-between max-w-full md:max-w-6xl px-4 md:px-6 py-4 md:flex-row fixed top-0 z-50 w-full backdrop-blur bg-secondary-2 bg-opacity-30">
+                <a href="/" className=" z-10 active">
+                    <Image src="/logos/Logo UEHA-04.svg" className="w-24 p-0 g-image" height={40} width={40} alt="" priority/>
                 </a>
-                <nav class="z-10">
-                    <ul class="flex flex-row items-center px-6 py-4 text-indigo-100 bg-indigo-900 rounded-lg">
-                        <li class="pr-8">
-                            <a href="/">Home</a>
-                        </li>
-                        <li class="pr-8">
-                            <a href="./#Nosotros" >Nosotros</a>
-                        </li>
-                        <li class="pr-8">
-                            <a href="./#Informacion" >Información</a>
-                        </li>
-                        <li class="pr-8">
-                            <a href="./#Conocimiento" class="ml-2">Conocimiento</a>
-                        </li>
-                        <li class="pr-8">
-                            <a href="#" class="ml-2">Reto</a>
-                        </li>
+                <nav>
+                    <ul className="flex flex-row items-center px-6 py-4 gap-16 text-white bg-primary-3 rounded-lg">
+                        {navigation.map(function(e,i){
+                            return (
+                                <li className={e.className} key={i}>
+                                    <a href={e.href} target="_self">
+                                        {e.label}
+                                    </a>
+                                </li>
+                            )
+                        })}
                     </ul>
                 </nav>
             </header>
-        </main>
     )
 }

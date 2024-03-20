@@ -1,18 +1,28 @@
 'use client'
 import React from 'react'
 import LabCTF from '@/components/ui/panels/LabCTF'
-export default function CTFLab() {
+import { Button } from '@material-tailwind/react'
+import { Fragment } from 'react'
+export default function CTFLab({onLabOpen, onLabClose}) {
   return (
-    <div>
-       <LabCTF
+    <div className="grid grid-cols-3 gap-4 p-4">
+      <LabCTF
           label="Bienvenida a CTF!!!"
           flag="Bienvenido"
-          process={(a,e) => {a == e}}
-        >
-          <h1>
-            Bienvenido
-          </h1>
-        </LabCTF>
+          onClick={onLabOpen}
+          onClose={onLabClose}
+      >
+          {({flag}) => 
+         <Fragment>
+           <h1 className="text-semibold text-3xl">
+             Bienvenido
+           </h1>
+           <p className="opacity-70">
+             Formato de las FLAGS que vamos a usar ({flag})
+           </p>
+         </Fragment>
+          }
+      </LabCTF>
     </div>
   )
 }
