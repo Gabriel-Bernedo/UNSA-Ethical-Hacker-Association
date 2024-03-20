@@ -1,40 +1,52 @@
 
 'use client'
-import React, {useRef} from 'react'
+import React, {Fragment, useRef, useState} from 'react'
 import MyPopup from '../Popups/MyPopup'
-import { Button } from '@material-tailwind/react'
+import { Button, Input } from '@material-tailwind/react'
+import cuid2 from '@paralleldrive/cuid2'
 const LabCTFClassName = ""
-export default function LabCTF({label, children, flag, process}) {
-  const res = useRef(null)
+export default function LabCTF({label, children, onClick, flag: iFlag}) {
+  const flag = `SECRET_{${iFlag || 'xd'}}`
+ 
 
-  function verifyFlag(){
-    const value = res.current.value
-    if(process(value, flag)){
-      alert("Reto Cumplido")
-    } else {
-      alert("FLAG Incorrecta")
+  const Content = () => {
+    const [res, setRes] = useState('')
+    
+    function handleOnChange({target}){
+      return setRes(target.value)
     }
+
+    return (
+      <div className="flex flex-col justify-between h-full">
+        <div className="bg-primary-3 rounded-lg p-4">
+          {children}
+        </div>
+        <div className="bg-secondary-2 rounded-lg p-4 relative justify-around ">
+          <Input 
+            color='white'
+            type="text"
+            label="FLAG"
+            value={res}
+            onChange={handleOnChange} 
+            className='pr-20'
+            containerProps={{
+              className: "min-w-0"
+            }}
+          />
+          <Button
+            size="sm"
+            className="!absolute right-5 top-5 rounded"
+          >
+            ENVIAR
+          </Button>
+        </div>
+      </div>
+    )
   }
 
   return (
-    <MyPopup
-      trigger={
-        <Button className={LabCTFClassName}>
-          {label}
-        </Button>
-      }
-    >
-      {() => 
-        <section>
-          <div>
-            {children}
-          </div>
-          <div className='flex gap-4 p-2'>
-            <input type="text" ref={res} className='text-black'/>
-            <Button onClick={verifyFlag}>Ingrese Clave</Button>
-          </div>
-        </section>
-      }
-    </MyPopup>
+    <Button onClick={() => onClick(Content)}>
+      {label}
+    </Button>
   )
 }

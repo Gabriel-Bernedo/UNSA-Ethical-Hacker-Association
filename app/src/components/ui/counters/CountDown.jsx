@@ -1,11 +1,12 @@
 'use client'
 import React, {useRef, useEffect} from 'react'
 import MyImage from '@/components/images/MyImage'
-
-const defaultContainerClassName = ""
+import Image from 'next/image'
+const defaultContainerClassName = "flex flex-col items-center justify-center"
 const defaultFullContainerClassName = ""
-const defaultTimeClassName = ""
-const timeStamp = 1710979200000
+const defaultTimeClassName = "text-5xl"
+const defaultDateClassName = "text-sm"
+const timeStamp = 1711049400000
 
 function useDate(){
   const [days, hours, minutes, seconds] = [useRef(null),useRef(null),useRef(null),useRef(null)]
@@ -56,24 +57,24 @@ function useCountDown({timeStamp}){
 export default function CountDown({timeClassName, dateClassName, containerClassName, fullContainerClassName}) {
   const {days, hours, minutes, seconds} = useCountDown({timeStamp})
   return (
-    <section class="my-32 flex flex-col gap-y-10 justify-center items-center">
-      <MyImage imgName="logo"/>
+    <section class="my-4 flex flex-col gap-y-10 justify-center items-center">
+      <Image src="/logos/Logo UEHA-04.svg" className="p-0 g-image" height={200} width={200} />
       <div className={fullContainerClassName || "flex gap-5"} data-date>
-        <div className={containerClassName} data-days>
-          <span ref={days}>00</span>
-          <span>Dias</span>
+        <div className={defaultContainerClassName} data-days>
+          <span ref={days} className={defaultTimeClassName}>00</span>
+          <span className={defaultDateClassName}>Dias</span>
         </div>
-        <div className={containerClassName} data-hours>
-          <span ref={hours}>00</span>
-          <span>Horas</span>
+        <div className={defaultContainerClassName} data-hours>
+          <span ref={hours} className={defaultTimeClassName}>00</span>
+          <span className={defaultDateClassName}>Horas</span>
         </div>
-        <div className={containerClassName} data-minutes>
-          <span ref={minutes}>00</span>
-          <span>Minutos</span>
+        <div className={defaultContainerClassName} data-minutes>
+          <span ref={minutes} className={defaultTimeClassName}>00</span>
+          <span className={defaultDateClassName}>Minutos</span>
         </div>
-        <div className={containerClassName} data-seconds>
-          <span ref={seconds}>00</span>
-          <span>Segundos</span>
+        <div className={defaultContainerClassName} data-seconds>
+          <span ref={seconds} className={defaultTimeClassName}>00</span>
+          <span className={defaultDateClassName}>Segundos</span>
         </div>
       </div>
     </section>

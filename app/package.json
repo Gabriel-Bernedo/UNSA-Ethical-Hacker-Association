@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next-auth/prisma-adapter": "^1.0.7",
     "@material-tailwind/react": "^2.1.9",
     "@midudev/tailwind-animations": "^0.0.7",
+    "@next-auth/prisma-adapter": "^1.0.7",
+    "@paralleldrive/cuid2": "^2.2.2",
     "@prisma/client": "^5.10.2",
     "@vercel/speed-insights": "^1.0.10",
     "inquirer": "^9.2.16",

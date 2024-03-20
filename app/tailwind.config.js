@@ -21,6 +21,11 @@ module.exports = withMT({
         "anime-cover": "url('/anime.webp')",
         "anime-cover-2": "url('/img.webp')",
         "anime-cover-3": "url('/arch.webp')",
+        "wallpaper-1": "url('/wallpapers/main.jpg')",
+        "wallpaper-2": "url('/wallpapers/spacial.jpg')",
+        "wallpaper-crypto": "url('/wallpapers/crypto.webp')",
+        "wallpaper-steg": "url('/wallpapers/steg.webp')",
+        "wallpaper-hash": "url('/wallpapers/hash.webp')",
       },
       dropShadow: {
         "bitLight" : '0 10px 10px rgba(125, 70, 255, 0.25)',
@@ -33,10 +38,22 @@ module.exports = withMT({
           '0 10px 10px rgba(100, 255, 255, 0.25)',
           "0 12.5px 12.5px rgba(100, 255, 255, 0.5)",
         ],
+        "primaryLight": "0 10px 10px rgba(245, 166, 13, 0.5)",
+        "primaryLight": "0 12.5px 12.5px rgba(245, 166, 13, 1)",
+        "secondaryLight": "0 10px 10px rgba(159, 54, 33, 0.5)",
+        "secondaryLight": "0 12.5px 12.5px rgba(159, 54, 33, 1)",
       },
       colors: {
-        "primary" : "#000",
-        "secondary" : "#FFF",
+        "primary" : {
+          1: "#f5a60d",
+          2: "#f5a50e",
+          3: "#e27a00",
+        },
+        "secondary" : {
+          1: "#9f3621",
+          2: "#7b201f",
+        },
+        "bg": "#000",
       }
     },
   },
