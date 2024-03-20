@@ -26,7 +26,10 @@ export default function VibringContainer({children}) {
       before:ease-in-out
       after:transition after:duration-300 after:delay-75
       after:ease-in-out
-      z-[10] before:z-[-1]"
+      z-[10] before:z-[-1]
+      
+      pointer-events-none
+      "
     >
       {children}
     </div>

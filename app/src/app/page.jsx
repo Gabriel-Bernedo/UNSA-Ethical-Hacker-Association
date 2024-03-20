@@ -10,6 +10,7 @@ import Abot from "@/sections/landing/Abot";
 import More from "@/sections/landing/More";
 import Carousel from "@/sections/landing/Carousel";
 import Footer from "@/sections/landing/Footer";
+import CTF from "../sections/landing/CTF";
  function Home() {
     return (
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -32,6 +33,7 @@ export default function LandingPage(){
         <Abot/>
         <More />
         <Carousel />
+        <CTF/>
         <Footer />
       </main>
       </Fragment>
