@@ -3,11 +3,10 @@
 import React, {Fragment, useRef, useState} from 'react'
 import MyPopup from '../Popups/MyPopup'
 import { Button, Input } from '@material-tailwind/react'
-import cuid2 from '@paralleldrive/cuid2'
+import {createId} from '@paralleldrive/cuid2'
 const LabCTFClassName = ""
-export default function LabCTF({label, children, onClick, flag: iFlag}) {
-  const flag = `SECRET_{${iFlag || 'xd'}}`
- 
+export default function LabCTF({label, children: Children, onClick, flag: iFlag}) {
+  const flag = `SECRET_{${iFlag || createId()}}` 
 
   const Content = () => {
     const [res, setRes] = useState('')
@@ -19,7 +18,7 @@ export default function LabCTF({label, children, onClick, flag: iFlag}) {
     return (
       <div className="flex flex-col justify-between h-full">
         <div className="bg-primary-3 rounded-lg p-4">
-          {children}
+          <Children flag={flag}/>
         </div>
         <div className="bg-secondary-2 rounded-lg p-4 relative justify-around ">
           <Input 

@@ -9,11 +9,11 @@ export default function CTFLab({onLabClick}) {
           label="Bienvenida a CTF!!!"
           flag="Bienvenido"
           onClick={onLabClick}
-          process={(a,e) => {a == e}}
       >
-          <h1>
+          {({flag}) => <h1>
             Bienvenido
-          </h1>
+            {flag}
+          </h1>}
       </LabCTF>
     </div>
   )
