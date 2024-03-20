@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function MyActionButton({href, className, isActive, label, onClick}) {
-  return (
+export default function MyActionButton({href, className, isActive, label, onClick, prefetch}) {
+  return prefetch ? (
     <Link
       href={href}
       legacyBehavior
@@ -15,5 +15,15 @@ export default function MyActionButton({href, className, isActive, label, onClic
         {label}
       </a>
     </Link>
+  ) 
+  : (
+    <a 
+      href={href}
+      className={className}
+      data-active={isActive}
+      onClick={onClick}
+    >
+      {label}
+    </a>
   )
 }

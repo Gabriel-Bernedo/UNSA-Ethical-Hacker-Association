@@ -1,3 +1,4 @@
+'use client'
 import React, { Fragment } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -38,7 +39,9 @@ export default function HeaderNav() {
       {  session ?
         <Fragment>
           <MyPopup
-            trigger={() => <SessionLabel session={session}/>}
+            trigger={<div className="rounded-full bg-indigo-700 cursor-pointer">
+              <SessionLabel session={session}/>
+            </div>}
           >
             {() => 
               <SessionPanel session={session}/>
@@ -48,9 +51,6 @@ export default function HeaderNav() {
           {/* <button onClick={() => signOut()}>
             <a> Log Out </a>
           </button> */}
-          <LogoutButton
-            className={NavItemsClassName}
-          />
           
         </Fragment>
       :
