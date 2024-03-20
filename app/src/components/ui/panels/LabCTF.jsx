@@ -5,8 +5,15 @@ import MyPopup from '../Popups/MyPopup'
 import { Button, Input } from '@material-tailwind/react'
 import {createId} from '@paralleldrive/cuid2'
 const LabCTFClassName = ""
-export default function LabCTF({label, children: Children, onClick, onClose, flag: iFlag}) {
+export default function LabCTF({label, children: Children, onClick, onClose, flag: iFlag, onSuccess: success, onFailure: failure}) {
   const flag = `SECRET_{${iFlag || createId()}}` 
+  const onSuccess = success || function() {
+    alert("Felicidades, encontraste el FLAG")
+    onClose()
+  }
+  const onFailure = failure || function(){
+    alert("Lo siento, el input ingresado no es el FLAG")
+  }
 
   const Content = () => {
     const [res, setRes] = useState('')
@@ -15,6 +22,14 @@ export default function LabCTF({label, children: Children, onClick, onClose, fla
       return setRes(target.value)
     }
 
+    function handleResponse(){
+      if(res == flag){
+        onSuccess()
+      } else {
+        onFailure()
+      }
+    }
+    
     return (
       <div className="flex flex-col justify-between h-full relative">
         <button  className="text-gray-400 bg-black
@@ -47,6 +62,7 @@ export default function LabCTF({label, children: Children, onClick, onClose, fla
           <Button
             size="sm"
             className="!absolute right-5 top-5 rounded"
+            onClick={handleResponse}
           >
             ENVIAR
           </Button>
@@ -54,7 +70,6 @@ export default function LabCTF({label, children: Children, onClick, onClose, fla
       </div>
     )
   }
-
   return (
     <Button onClick={() => onClick(Content)}>
       {label}

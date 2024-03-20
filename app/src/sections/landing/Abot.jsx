@@ -21,6 +21,7 @@ export default function LandingPage(){
                             className=" p-0 g-image" 
                             height={300} 
                             width={300} 
+                            alt=""
                         />
                     </div>
                 </div>	

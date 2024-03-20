@@ -12,7 +12,7 @@ export default function InfoCard({data}) {
         hover:drop-shadow-secondaryFullLight drop-shadow-secondaryLight" 
       >
         <div className="relative pt-32 sm:pt-48 lg:pt-40">
-          <div className="p-4 sm:p-6 text-teal-100">
+          <div className="p-4 sm:p-6 text-primary-1">
             <h3 className="mt-0.5 text-lg font-bold">
               {data.title}
             </h3>

@@ -22,7 +22,7 @@ module.exports = withMT({
         "anime-cover-2": "url('/img.webp')",
         "anime-cover-3": "url('/arch.webp')",
         "wallpaper-1": "url('/wallpapers/main.jpg')",
-        "wallpaper-2": "url('/wallpapers/spacial.jpg')",
+        // "wallpaper-2": "url('/wallpapers/spacial.jpg')",
         "wallpaper-crypto": "url('/wallpapers/crypto.webp')",
         "wallpaper-steg": "url('/wallpapers/steg.webp')",
         "wallpaper-hash": "url('/wallpapers/hash.webp')",
@@ -39,9 +39,12 @@ module.exports = withMT({
           "0 12.5px 12.5px rgba(100, 255, 255, 0.5)",
         ],
         "primaryLight": "0 10px 10px rgba(245, 166, 13, 0.5)",
-        "primaryLight": "0 12.5px 12.5px rgba(245, 166, 13, 1)",
+        "primaryFullLight": "0 12.5px 12.5px rgba(245, 166, 13, 1)",
         "secondaryLight": "0 10px 10px rgba(159, 54, 33, 0.5)",
-        "secondaryLight": "0 12.5px 12.5px rgba(159, 54, 33, 1)",
+        "secondaryFullLight": [
+          "0 -12.5px 12.5px rgba(79, 27, 17, 1)",
+          "0 12.5px 12.5px rgba(245, 166, 13, 0.5)",
+      ],
       },
       colors: {
         "primary" : {

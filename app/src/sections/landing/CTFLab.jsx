@@ -18,7 +18,7 @@ export default function CTFLab({onLabOpen, onLabClose}) {
              Bienvenido
            </h1>
            <p className="opacity-70">
-             {flag}
+             Formato de las FLAGS que vamos a usar ({flag})
            </p>
          </Fragment>
           }

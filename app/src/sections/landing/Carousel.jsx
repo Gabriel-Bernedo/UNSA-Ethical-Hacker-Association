@@ -37,27 +37,27 @@ export default function LandingPage(){
 					return(
 						<div key={i} className={"relative h-full w-full bg-cover " + e.cover}>
 							<div className="absolute inset-0 grid h-full w-full place-items-start bg-black/75">
-							<div className="p-8 pl-5 w-3/5 text-start ">
-							<Typography
-							variant="h1"
-							color="white"
-							className="mb-4 text-3xl uppercase text-justify"
-							>
-								{e.title}
-							</Typography>
-							<Typography
-							variant="lead"
-							color="white"
-							className="opacity-80 text-justify text-xl"
-							>
-								{e.body}
-							</Typography>
-							{/* <div className="flex justify-center gap-3">
-							<Button size="sm" color="white" className="pt-2">
-								Más información
-							</Button>
-							</div> */}
-						</div>
+								<div className="ml-8 p-12 w-3/5 text-start ">
+									<Typography
+									variant="h1"
+									color="white"
+									className="mb-4 text-3xl uppercase text-justify"
+									>
+										{e.title}
+									</Typography>
+									<Typography
+									variant="lead"
+									color="white"
+									className="opacity-80 text-justify text-xl"
+									>
+										{e.body}
+									</Typography>
+									{/* <div className="flex justify-center gap-3">
+									<Button size="sm" color="white" className="pt-2">
+										Más información
+									</Button>
+									</div> */}
+								</div>
 							</div>
 						</div>
 					)
