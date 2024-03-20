@@ -30,7 +30,7 @@ function useDate(){
       minutes.current.innerText = formatTime((date % HOUR) / MINUTE)
     }
     if(seconds.current){
-      seconds.current.innerText = Math.floor((date % MINUTE) / SECOND)
+      seconds.current.innerText = formatTime((date % MINUTE) / SECOND)
     }
   }
 
@@ -41,12 +41,15 @@ function useDate(){
 function useCountDown({timeStamp}){
   const {days, hours, minutes, seconds, updateDate, SECOND} = useDate()
   const date = new Date(+timeStamp).getTime()
+
   function updateCountdown(){
     const now = Date.now()
     const diff = date - now
     updateDate(diff)
   }
-  setInterval(updateCountdown(), SECOND)
+
+  setInterval(updateCountdown, SECOND)
+  updateCountdown()
   return {days, hours, minutes, seconds}
 }
 

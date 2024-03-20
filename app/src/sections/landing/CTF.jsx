@@ -1,5 +1,6 @@
 import React from 'react'
 import CountDown from '@/components/ui/counters/CountDown'
+import CTFLab from './CTFLab'
 export default function CTF() {
   return (
     <div className="flex flex-col justify-center items-center">
@@ -17,7 +18,10 @@ export default function CTF() {
         <CountDown />
       </div>
       <section className="my-12">
-        Some FLAGS HINTS
+        <h1>
+          Some FLAGS HINTS
+        </h1>
+        <CTFLab />
       </section>
     </div>
   )
