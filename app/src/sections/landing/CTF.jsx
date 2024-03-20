@@ -4,13 +4,13 @@ import CountDown from '@/components/ui/counters/CountDown'
 import CTFLab from './CTFLab'
 import { Fragment, useState } from 'react'
 
-const padDefault = (
+const PadDefault = () => (
   <Fragment>
     <h1 className="font-semibold text-3xl">
       Participa en nuestra CTF !!!
     </h1>
     <p>
-      Hemos organizado nuestra propia CTF, participa mientras puedas XDDD NO TE LO ESPERES 
+      Hemos organizado nuestra propia CTF , participa mientras puedas !!!
     </p>
     <CountDown />
     <div className="text-center text-lg">
@@ -19,14 +19,14 @@ const padDefault = (
   </Fragment>
 )
 export default function CTF() {
-  const [padContent, setPadContent] = useState(padDefault)
+  const [padContent, setPadContent] = useState(<PadDefault/>)
 
   function handleLabOpen(Content){
     setPadContent(<Content/>)
   }
 
   function handleLabClose(){
-    setPadContent(padDefault)
+    setPadContent(<PadDefault/>)
   }
 
   return (
@@ -57,7 +57,7 @@ export default function CTF() {
             />
           </div>
         </section>
-        <div className='rounded-lg bg-primary-1 center p-8 m-8 h-min-full'>
+        <div className='rounded-lg bg-primary-1 center p-8 m-8 h-min-full text-black'>
           {padContent}
         </div>
       </div>
