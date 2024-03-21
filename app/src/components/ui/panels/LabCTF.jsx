@@ -16,17 +16,17 @@ export default function LabCTF({label, children: Children, onClick, onClose, fla
   }
 
   const Content = () => {
-    const [res, setRes] = useState('')
+    const [input, setRes] = useState('')
     
     function handleOnChange({target}){
       return setRes(target.value)
     }
 
     function handleResponse(){
-      if(res == flag){
-        onSuccess()
+      if(input == flag){
+        onSuccess({input})
       } else {
-        onFailure()
+        onFailure({input})
       }
     }
     
@@ -52,7 +52,7 @@ export default function LabCTF({label, children: Children, onClick, onClose, fla
             color='white'
             type="text"
             label="FLAG"
-            value={res}
+            value={input}
             onChange={handleOnChange} 
             className='pr-20'
             containerProps={{

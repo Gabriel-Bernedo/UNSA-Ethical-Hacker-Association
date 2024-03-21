@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import VibringContainer from '@/components/ui/containers/VibringContainer'
+import WhatsappButton from '@/components/ui/buttons/WhatsappButton'
 export default function LandingPage(){
     return (
         <VibringContainer>
@@ -15,6 +16,7 @@ export default function LandingPage(){
                             Somos un grupo de estudiantes apasionados y dedicados que hemos decidido aventurarnos en el fascinante mundo de la ciberseguridad. Procedentes de diversos orígenes académicos y experiencias, nos unimos bajo la bandera de la curiosidad y el deseo de aprender.
                             </p>
                         </div>
+                        <WhatsappButton className="translate-x-3/4 translate-y-1/2 "/>
                     </div>
                     <div className="mt-12 md:mt-0 justify-center">
                         <Image src="/logos/logonew.svg" 

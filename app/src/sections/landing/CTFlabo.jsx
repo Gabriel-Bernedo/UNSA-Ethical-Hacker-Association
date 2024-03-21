@@ -6,7 +6,7 @@ import {
     Tab,
     TabPanel,
   } from "@material-tailwind/react";
-
+import LogoIcon from "@/components/icons/LogoIcon";
 const data = [
   {
     label: "Bienvenida",
@@ -19,7 +19,7 @@ const data = [
         Es lo que te diria, pero al final se que te da igual .-. 
         Con cariño : - Kintsugi Y.
       </div>
-      <img src="./meme.svg" alt="CTF-0" className=" w-[200px] pt-5 block m-auto"/>
+      <img src="./logos/logonewsteg.svg" alt="CTF-0" className=" w-[200px] pt-5 block m-auto"/>
     </Fragment>
   },
   {

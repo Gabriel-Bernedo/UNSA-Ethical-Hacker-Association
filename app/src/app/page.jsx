@@ -11,7 +11,6 @@ import More from "@/sections/landing/More";
 import Carousel from "@/sections/landing/Carousel";
 import Footer from "@/sections/landing/Footer";
 import CTF from "../sections/landing/CTF";
-import AboutJoinButton from '@/components/ui/buttons/AboutJoinButton'
 
 
 
@@ -38,7 +37,6 @@ export default function LandingPage(){
         <More />
         <Carousel />
         <CTF/>
-        <AboutJoinButton/>
         <Footer />
       </main>
     )

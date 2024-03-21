@@ -39,12 +39,12 @@ module.exports = withMT({
           '0 10px 10px rgba(100, 255, 255, 0.25)',
           "0 12.5px 12.5px rgba(100, 255, 255, 0.5)",
         ],
-        "primaryLight": "0 10px 10px rgba(245, 166, 13, 0.5)",
+        "primaryLight": "0 10px 10px rgba(100, 116, 139, 0.5)",
         "primaryFullLight": "0 12.5px 12.5px rgba(100, 116, 139, 1)",
-        "secondaryLight": "0 10px 10px rgba(156, 163, 175, 0.5)",
+        "secondaryLight": "0 10px 10px rgba(156, 163, 175, 1)",
         "secondaryFullLight": [
-          "0 -12.5px 12.5px rgba(79, 27, 17, 1)",
-          "0 12.5px 12.5px rgba(245, 166, 13, 0.5)",
+          "0 -12.5px 12.5px rgba(100, 116, 139, 1)",
+          "0 12.5px 12.5px rgba(156, 163, 175, 1)",
       ],
       },
       colors: {

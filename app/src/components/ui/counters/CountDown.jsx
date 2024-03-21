@@ -6,7 +6,7 @@ const defaultContainerClassName = "flex flex-col items-center justify-center"
 const defaultFullContainerClassName = ""
 const defaultTimeClassName = "text-5xl"
 const defaultDateClassName = "text-sm"
-const timeStamp = 1711049400000
+export const timeStamp = 1711060200000 // new Date().getTime() + 10000 
 
 function useDate(){
   const [days, hours, minutes, seconds] = [useRef(null),useRef(null),useRef(null),useRef(null)]
@@ -46,7 +46,9 @@ function useCountDown({timeStamp}){
   function updateCountdown(){
     const now = Date.now()
     const diff = date - now
-    updateDate(diff)
+    if(diff > 0){
+      updateDate(diff)
+    }
   }
 
   setInterval(updateCountdown, SECOND)
