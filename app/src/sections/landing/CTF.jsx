@@ -3,31 +3,54 @@ import React from 'react'
 import CountDown from '@/components/ui/counters/CountDown'
 import CTFLab from './CTFLab'
 import { Fragment, useState } from 'react'
+import CTFlabo from './CTFlabo'
+import LabCTF from '@/components/ui/panels/LabCTF'
 
-const PadDefault = () => (
-  <Fragment>
-    <h1 className="font-semibold text-3xl">
-      Participa en nuestra CTF !!!
-    </h1>
-    <p>
-      Hemos organizado nuestra propia CTF , participa mientras puedas !!!
-    </p>
-    <CountDown />
-    <div className="text-center text-lg">
-      Para iniciar !!!
-    </div>
-  </Fragment>
-)
+
+const PadDefault = ({onStart, onClose}) => {
+  const button = (
+    <LabCTF
+      label="Empieza el Reto !!!"
+      flag="Bienvenido"
+      onClick={onStart}
+      onClose={onClose}
+    >
+    {({flag}) => 
+    <Fragment>
+      <CTFlabo flag={flag}/>
+    </Fragment>
+    } 
+  </LabCTF>
+  )
+  return (
+    <Fragment>
+      <h1 className="font-semibold text-3xl">
+        Participa en nuestra CTF !!!
+      </h1>
+      <p>
+        Hemos organizado nuestra propia CTF , participa mientras puedas !!!
+      </p>
+      <CountDown />
+      <div className="text-center text-lg">
+        {button}
+      </div>
+    </Fragment>
+  )
+}
+
+
 export default function CTF() {
-  const [padContent, setPadContent] = useState(<PadDefault/>)
+
+  const [padContent, setPadContent] = useState(<PadDefault onStart={handleLabOpen} onClose={handleLabClose}/>)
 
   function handleLabOpen(Content){
     setPadContent(<Content/>)
   }
 
   function handleLabClose(){
-    setPadContent(<PadDefault/>)
+    setPadContent(<PadDefault onStart={handleLabOpen} onClose={handleLabClose}/>)
   }
+
 
   return (
     <div id="CTF" className="flex flex-col h-screen">
@@ -47,14 +70,18 @@ export default function CTF() {
                 UEHA - CTF - LAB
               </h1>
               <p>
-                No te ves lo suficientemente preparado ? <br />
-                pues aqui algunos pequeños ejercicios para que practiques
+                ¿ No te ves lo suficientemente preparado ? <br />
+                Pues aqui algunos pequeños ejercicios para que practiques
               </p>
             </div>
             <CTFLab 
               onLabOpen={handleLabOpen}
               onLabClose={handleLabClose}
             />
+            <div>
+              <p>&quot;Hermosos Bosques Embellecen Paisajes, Siempre Persiste, Vuela&quot; - Kintsugi Y.</p>
+            </div>
+
           </div>
         </section>
         <div className='rounded-lg bg-primary-1 center p-8 m-8 h-min-full text-black'>

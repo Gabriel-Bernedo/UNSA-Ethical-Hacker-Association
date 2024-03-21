@@ -4,10 +4,16 @@ import { Carousel,Typography, Button } from "@material-tailwind/react";
 
 const carouselcontent = [
 	{
+		title: "Inspección de elementos",
+		body: `Es una funcionalidad proporcionada por los navegadores web que permite a los desarrolladores web y diseñadores examinar y modificar el código HTML, CSS y JavaScript de una página web en tiempo real. 
+		Esta herramienta es parte de las herramientas de desarrollo integradas en los navegadores modernos y es fundamental para el desarrollo web, la depuración y la optimización del rendimiento de sitios web.`,
+		cover: "bg-wallpaper-ins",
+	},
+	{
 		title: "Criptografía",
 		body: `La criptografía es una disciplina que se encarga de proteger la información mediante técnicas que la convierten en un formato ilegible para aquellos que no tengan la clave necesaria para descifrarla. 
 		Se utiliza en diversos campos como la seguridad informática, las comunicaciones, las transacciones financieras, entre otros, con el objetivo de garantizar la confidencialidad, integridad y autenticidad de los datos. 
-		La criptografía se basa en algoritmos matemáticos y cifrados para codificar la información de manera segura y prevenir accesos no autorizados.`,
+		La criptografía se basa en algoritmos matemáticos y cifrados para codificar la información de manera segura y prevenir accesos no autorizados. Algunos ejemplos son Cipher Caesar, RSA, AES, Cipher Vigenere, entre otros.`,
 		cover: "bg-wallpaper-crypto",
 	},
 	{

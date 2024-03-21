@@ -44,7 +44,7 @@ export default function LabCTF({label, children: Children, onClick, onClose, fla
             </path>
           </svg>
         </button>
-        <div className="bg-primary-3 rounded-lg p-4">
+        <div className="bg-primary-3 rounded-lg p-4 mb-4">
           <Children flag={flag}/>
         </div>
         <div className="bg-secondary-2 rounded-lg p-4 relative justify-around ">

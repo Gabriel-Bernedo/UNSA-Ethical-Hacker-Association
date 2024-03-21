@@ -25,7 +25,7 @@ const data = {
     height: 80
   },
   "unsa": {
-    src:"/unsa-logo.png",
+    src:"/unsa-logo.webp",
     alt:"UNSA",
     width:100,
     height:24
