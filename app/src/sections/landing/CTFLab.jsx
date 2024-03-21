@@ -8,7 +8,7 @@ export default function CTFLab({onLabOpen, onLabClose}) {
     <div className="gap-4 p-4 flex justify-center">
       <LabCTF
           label="Bienvenida a CTF!!!"
-          flag="Bienvenido"
+          flag=""
           onClick={onLabOpen}
           onClose={onLabClose}
       >
@@ -19,6 +19,7 @@ export default function CTFLab({onLabOpen, onLabClose}) {
            </h1>
            <p className="opacity-70">
              Formato de las FLAGS que vamos a usar ({flag})
+            
            </p>
            
          </Fragment>
