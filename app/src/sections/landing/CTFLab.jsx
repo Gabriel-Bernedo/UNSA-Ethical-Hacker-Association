@@ -93,6 +93,9 @@ export default function CTFLab({onLabOpen, onLabClose}) {
             const asciiString = asciiCodes.join(' ');
             return asciiString;
           }
+
+         
+          
           return <Fragment>
             <h1 className="text-semibold text-3xl">
               ¿ ASCII ? sí señor

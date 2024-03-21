@@ -10,7 +10,7 @@ import { timeStamp } from '@/components/ui/counters/CountDown'
 const PadDefault = ({onStart, onClose}) => {
   const [enabled, setEnabled] = useState(timeStamp < (new Date().getTime()))
   setInterval(()=>{
-    setEnabled(timeStamp < (new Date().getTime()))
+    setEnabled(timeStamp < (new Date().getTime()))  //timeStamp < (new Date().getTime())
   }, 1000)
   const button = (
     <LabCTF
@@ -18,6 +18,12 @@ const PadDefault = ({onStart, onClose}) => {
       flag=""
       onClick={onStart}
       onClose={onClose}
+      onSuccess={({input}) => {
+        alert(`Felicidades: Encontraste tu FLAG\n Toma una captura y enviala por el grupo de wwp para declarate como el ganador definivo\n${input}`)
+      }}
+      onFailure={() => {
+        alert("Lo sentimos, esa no es tu FLAG")
+      }}
     >
     {({flag}) => 
     <Fragment>
@@ -29,15 +35,19 @@ const PadDefault = ({onStart, onClose}) => {
 
   return (
     <Fragment>
-      <h1 className="font-semibold text-3xl">
-        Participa en nuestra CTF !!!
-      </h1>
-      <p>
-        Hemos organizado nuestra propia CTF , participa mientras puedas !!!
-      </p>
-      <CountDown />
-      <div className="text-center text-lg">
-        {enabled? button: "Para empezar !!!"}
+      <div>
+        <h1 className="font-semibold text-3xl">
+          Participa en nuestra CTF !!!
+        </h1>
+        <p>
+          Hemos organizado nuestra propia CTF , participa mientras puedas !!!
+        </p>
+      </div>
+      <div className="flex flex-col items-center justify-around self-stretch">
+        <CountDown />
+        <div className="text-center text-lg">
+          {enabled? button: "Para empezar !!!"}
+        </div>
       </div>
     </Fragment>
   )
@@ -96,7 +106,7 @@ export default function CTF() {
 
           </div>
         </section>
-        <div className='rounded-lg bg-primary-1 center p-8 m-8 h-min-full text-white'>
+        <div className='rounded-lg bg-primary-1 center p-8 m-4 mx-8 h-min-full text-white'>
           {padContent}
         </div>
       </div>

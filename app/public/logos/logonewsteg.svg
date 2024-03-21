@@ -20,7 +20,7 @@
    xmlns:svg="http://www.w3.org/2000/svg">
    <path
       id="tengo gasaaa gaaaaa"
-      style="fill:none;fill-opacity:0;stroke:#ffffff;stroke-width:1.224;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+      style="fill:none;fill-opacity:0;stroke:#ffffff;stroke-width:1.224;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:fill markers stroke"
       d="M 78 111 32 101 115 32 110 101 99 101 115 97 114 105 111 32 113 117 101 32 116 111 109 101 115 32 108 111 32 112 114 105 109 101 114 111 32 113 117 101 32 101 110 99 117 101 110 116 114 97 115 32 115 97 98 101 115 32 63 44 32 101 115 32 112 111 115 105 98 108 101 32 113 117 101 32 112 117 101 100 97 115 32 101 110 99 111 110 116 114 97 114 32 97 108 103 111 32 109 97 115 32 105 110 116 101 114 101 115 97 110 116 101 32 101 110 32 108 97 115 32 101 110 116 114 97 195 177 97 115 32 100 101 108 32 99 195 179 100 105 103 111 44 32 115 105 110 32 101 109 98 97 114 103 111 44 32 113 117 105 101 110 101 115 32 115 111 109 111 115 32 112 97 114 97 32 101 110 99 111 110 116 114 97 114 32 97 108 103 111 32 101 110 32 51 57 48 54 50 53 32 108 195 173 110 101 97 115 32 100 101 32 100 111 99 117 109 101 110 116 97 99 105 195 179 110 32 44 95 44"
       sodipodi:nodetypes="cccccc" 
     />
@@ -154,9 +154,9 @@
            d="m 35.733212,129.03003 h 1.301786 v 10.29434 q 0,1.49918 0.882321,2.76514 0.882322,1.26598 2.343213,1.9878 1.475358,0.71072 3.182143,0.71072 1.706784,0 3.153213,-0.71072 1.460893,-0.72182 2.314285,-1.97669 0.867856,-1.26597 0.867856,-2.77625 v -10.29434 h 1.301786 v 10.29434 q 0,1.74348 -1.026964,3.23156 -1.0125,1.47696 -2.791606,2.35426 -1.764643,0.86619 -3.861963,0.86619 -2.097321,0 -3.861963,-0.86619 -1.764643,-0.8773 -2.791607,-2.35426 -1.0125,-1.48808 -1.0125,-3.23156 z m 42.657402,6.45201 v 0.99945 H 68.034188 v 8.12886 h 11.195354 v 0.99945 h -12.49714 v -16.57977 h 12.554997 v 0.99945 H 68.034188 v 5.45256 z m 29.060976,-6.45201 h 1.30179 v 16.57977 h -1.30179 v -9.12831 H 94.708558 v 9.12831 h -1.301785 v -16.57977 h 1.301785 v 6.45201 h 12.743032 z m 19.80384,10.4387 h 8.7075 l -4.36822,-8.05112 z m 9.22822,0.99946 h -9.85018 l -2.74822,5.14161 h -1.38857 l 9.05464,-16.77966 9.08357,16.77966 h -1.38857 z"
            id="text17"
            aria-label="UEHA" /><path
-           id="p4th24"
-           style="fill:none;fill-opacity:0;stroke:#ffffff;stroke-width:1.224;stroke-linecap:round;translucid;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
-           d="M 83 69 67 82 69 84 95 123 84 104 52 110 107 115 95 52 95 80 52 114 84 49 99 49 112 52 116 49 110 71 33 95 68 48 95 110 79 116 95 70 48 114 103 51 84 95 116 111 95 83 117 98 77 49 116 95 84 104 49 115 95 70 108 52 71 125"
+           id="path24-1"
+           style="fill:none;fill-opacity:0;stroke:#ffffff;stroke-width:1.224;stroke-linecap:round;translucid;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:fill markers stroke"
+           d="M 77 83 71 32 61 32 109 85 121 32 66 105 101 110 44 32 121 52 32 67 52 115 49 32 108 48 32 116 49 69 110 51 83 10 67 73 80 72 69 82 95 75 69 89 32 61 32 71 114 52 99 49 52 115 80 48 114 80 52 114 84 49 99 105 80 97 82"
            sodipodi:nodetypes="cccccc" />
            <path
            id="path25"
@@ -193,7 +193,7 @@
            style="opacity:0.804829" />
            <path
            id="pathXD"
-           style="fill:none;fill-opacity:0;stroke:#ffffff;stroke-width:1.224;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+           style="fill:none;fill-opacity:0;stroke:#ffffff;stroke-width:1.224;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:fill markers stroke"
            d="M 69 115 116 111 32 110 111 32 101 115 32 116 97 110 32 102 97 99 105 108 32 65 74 65 74 65 74 65 74 65 74 65 74 65 44 32 112 114 117 101 98 97 32 100 101 32 110 117 101 118 111 32 46 95 46"
            sodipodi:nodetypes="cccccc" />
            </g></g></g></svg>
