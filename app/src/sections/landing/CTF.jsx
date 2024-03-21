@@ -5,13 +5,17 @@ import CTFLab from './CTFLab'
 import { Fragment, useState } from 'react'
 import CTFlabo from './CTFlabo'
 import LabCTF from '@/components/ui/panels/LabCTF'
-
+import { timeStamp } from '@/components/ui/counters/CountDown'
 
 const PadDefault = ({onStart, onClose}) => {
+  const [enabled, setEnabled] = useState(timeStamp < (new Date().getTime()))
+  setInterval(()=>{
+    setEnabled(timeStamp < (new Date().getTime()))
+  }, 1000)
   const button = (
     <LabCTF
       label="Empieza el Reto !!!"
-      flag="Bienvenido"
+      flag=""
       onClick={onStart}
       onClose={onClose}
     >
@@ -22,6 +26,7 @@ const PadDefault = ({onStart, onClose}) => {
     } 
   </LabCTF>
   )
+
   return (
     <Fragment>
       <h1 className="font-semibold text-3xl">
@@ -32,7 +37,7 @@ const PadDefault = ({onStart, onClose}) => {
       </p>
       <CountDown />
       <div className="text-center text-lg">
-        {button}
+        {enabled? button: "Para empezar !!!"}
       </div>
     </Fragment>
   )
@@ -64,7 +69,7 @@ export default function CTF() {
             Que mejor forma que aprender que practicando: <br /> 
             Descubre y explota vulnerabilidades de sistemas bajo la modalidad de FLAGS (datos que representan informacion privada)
           </div>
-          <div className="my-4 bg-secondary-2 rounded-lg p-4">
+          <div className="my-4 bg-secondary-2 rounded-lg p-4 text-black">
             <div className='text-center'>
               <h1 className='text-lg font-bold'>
                 UEHA - CTF - LAB
@@ -80,11 +85,18 @@ export default function CTF() {
             />
             <div>
               <p>&quot;Hermosos Bosques Embellecen Paisajes, Siempre Persiste, Vuela&quot; - Kintsugi Y.</p>
+              {/* <script>
+                {
+                `/* Pues me encontraste, felicidades, 
+                ¿estas esperando algo a cambio?, 
+                tendras que esforzarte mejor
+                `}
+              </script> */}
             </div>
 
           </div>
         </section>
-        <div className='rounded-lg bg-primary-1 center p-8 m-8 h-min-full text-black'>
+        <div className='rounded-lg bg-primary-1 center p-8 m-8 h-min-full text-white'>
           {padContent}
         </div>
       </div>
