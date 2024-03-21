@@ -27,7 +27,7 @@ export default function CTFLab({onLabOpen, onLabClose}) {
              Hola CTF
            </h1>
            <p className="opacity-70 text-sm">
-              Como pueden notar, una de nuestras intenciones de UEHA es participar en la mayor cantidad de CTF's posible,
+              Como pueden notar, una de nuestras intenciones de UEHA es participar en la mayor cantidad de CTF{"'"}s posible,
               para ello, es necesario tener algo de experiencia en este campo, de este modo hemos programado
               nuestra propia <b>CTF</b>, este evento esta adaptado para que cualquier persona pueda resolverlo desde la comodidad de su <b>LAPTOP</b>, 
               o almenos, que sea capaz de averiguarlo terminando la mayoria de estos <b>&quot;LABORATORIOS&quot;</b>. <br />
