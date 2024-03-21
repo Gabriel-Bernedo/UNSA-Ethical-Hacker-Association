@@ -12,6 +12,7 @@ export default function AboutJoinButton() {
         drop-shadow-bitLight hover:drop-shadow-dark"
       >
         Join Now
+        <a href=""></a>
         <MyIcon iconName="right-arrow"/>
       </button>
     </div>

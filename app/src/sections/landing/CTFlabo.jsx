@@ -63,9 +63,9 @@ export default function CTF() {
   return (
       <Tabs value="html" className="max-w-[40rem]">
         <TabsHeader
-            className="bg-red-800"
+            className="bg-gray-400"
             indicatorProps={{
-            className: "bg-gray-900/10 shadow-none",
+            className: "bg-gray-100/10 shadow-none",
             }}
         >
           {data.map(({ label, value }) => (
@@ -76,7 +76,7 @@ export default function CTF() {
         </TabsHeader>
         <TabsBody>
             {data.map(({ value, desc, content }) => (
-            <TabPanel key={value} value={value} className="text-black font-bold text-justify">
+            <TabPanel key={value} value={value} className="text-white font-bold text-justify">
                 <p className="p-2 bg-primary-2 rounded-lg">
                   {desc}
                 </p>

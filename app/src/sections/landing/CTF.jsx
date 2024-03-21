@@ -91,7 +91,7 @@ export default function CTF() {
 
           </div>
         </section>
-        <div className='rounded-lg bg-primary-1 center p-8 m-8 h-min-full text-black'>
+        <div className='rounded-lg bg-primary-1 center p-8 m-8 h-min-full text-white'>
           {padContent}
         </div>
       </div>

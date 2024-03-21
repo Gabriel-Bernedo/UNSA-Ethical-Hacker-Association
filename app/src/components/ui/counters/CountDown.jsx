@@ -58,7 +58,7 @@ export default function CountDown({timeClassName, dateClassName, containerClassN
   const {days, hours, minutes, seconds} = useCountDown({timeStamp})
   return (
     <section className="my-4 flex flex-col gap-y-10 justify-center items-center">
-      <Image src="/logos/Logo UEHA-04.svg" className="p-0 g-image" height={150} width={150} alt="" priority/>
+      <Image src="/logos/logonew.svg" className="p-0 g-image" height={150} width={150} alt="" priority/>
       <div className={fullContainerClassName || "flex gap-5"} data-date>
         <div className={defaultContainerClassName} data-days>
           <span ref={days} className={defaultTimeClassName}>00</span>

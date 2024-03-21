@@ -17,7 +17,7 @@ export default function LandingPage(){
                         </div>
                     </div>
                     <div className="mt-12 md:mt-0 justify-center">
-                        <Image src="/logos/Logo UEHA-04.svg" 
+                        <Image src="/logos/logonew.svg" 
                             className=" p-0 g-image" 
                             height={300} 
                             width={300} 
