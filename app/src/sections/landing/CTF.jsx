@@ -39,7 +39,7 @@ const PadDefault = ({onStart, onClose}) => {
 }
 
 
-export default function sCTF() {
+export default function CTF() {
 
   const [padContent, setPadContent] = useState(<PadDefault onStart={handleLabOpen} onClose={handleLabClose}/>)
 
