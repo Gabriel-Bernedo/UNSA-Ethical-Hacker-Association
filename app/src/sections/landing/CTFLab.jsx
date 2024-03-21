@@ -39,12 +39,12 @@ export default function CTFLab({onLabOpen, onLabClose}) {
               Bendito seas HTML !!!
             </h1>
             <script>
-              // Como puedes ver, hay información oculta\n 
+              var text = &quot;Como puedes ver, hay información oculta 
               de la que te puedes aprovechar,
               ya sea la forma en la que se estructura y se guarda
               la información o funcionalidades de la app, si puedes entenderlo :3
-              es el fin de la introduccion , disfruta tu FLAG
-              : {flag}
+              es el fin de la introduccion , disfruta tu FLAG&quot;
+              const flag = &quot;{flag}&quot;
             </script>
             <p className='opacity-70'>
               HTML, el lenguaje que manejan los navegadores para renderizar la información 
@@ -79,7 +79,7 @@ export default function CTFLab({onLabOpen, onLabClose}) {
               ¿ ASCII ? sí señor
             </h1>
             <p className="opacity-70">
-              
+
               Hola de nuevo, problamente te preguntas que es ASCII, pues como probablemente hayas deducido
               ASCII es un <b>CÓDIGO DE CARACTERES</b> basado en el <b>ALFABETO LATINO</b>, ¿tiene algo de especial? No,
               pero fue lo suficientemente popular en su epoca para que decidieran convertirlo en un estandar

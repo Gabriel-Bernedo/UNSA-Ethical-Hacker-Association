@@ -80,6 +80,13 @@ export default function CTF() {
             />
             <div>
               <p>&quot;Hermosos Bosques Embellecen Paisajes, Siempre Persiste, Vuela&quot; - Kintsugi Y.</p>
+              {/* <script>
+                {
+                `/* Pues me encontraste, felicidades, 
+                ¿estas esperando algo a cambio?, 
+                tendras que esforzarte mejor
+                `}
+              </script> */}
             </div>
 
           </div>
