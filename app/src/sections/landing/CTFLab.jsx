@@ -13,16 +13,14 @@ export default function CTFLab({onLabOpen, onLabClose}) {
           onClose={onLabClose}
       >
           {({flag}) => 
-         <Fragment>
-           <h1 className="text-semibold text-3xl">
-             Bienvenido
-           </h1>
-           <p className="opacity-70">
-             Formato de las FLAGS que vamos a usar ({flag})
-            
-           </p>
-           
-         </Fragment>
+            <Fragment>
+              <h1 className="text-semibold text-3xl">
+                Bienvenido
+              </h1>
+              <p className="opacity-70">
+                Formato de las FLAGS que vamos a usar ({flag})
+              </p>
+            </Fragment>
           }
       </LabCTF>
     </div>
