@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
     <html lang="en" className="h-full">
       <body className={inter.className + " bg-fixed h-full"}>
         {/* <Provider> */}
-        <Navegacion />
         
           {/* <HeaderNav /> */}
           {children}

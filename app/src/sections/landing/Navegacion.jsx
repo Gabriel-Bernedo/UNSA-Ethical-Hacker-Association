@@ -27,7 +27,7 @@ const navigation = [
     }
 ]
 
-export default function LandingPage(){
+export default function Navegacion(){
     return (
             <header className="flex flex-col items-center justify-between md:max-w-full px-4 md:px-6 py-4 md:flex-row fixed top-0 z-50 w-full backdrop-blur bg-secondary-2 bg-opacity-30">
                 <a href="/" className=" z-10 active">

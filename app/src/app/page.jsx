@@ -11,34 +11,23 @@ import More from "@/sections/landing/More";
 import Carousel from "@/sections/landing/Carousel";
 import Footer from "@/sections/landing/Footer";
 import CTF from "../sections/landing/CTF";
-
-
-
- function Home() {
-    return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <Top/>
-        <Hero 
-          data={index.intro.desc} 
-          hero={<MyImage imgName="logo"/>}
-        />
-        <MyBar data={index.nav} type="details"/>
-      </main>
-    )
-  }
+import Navegacion from "@/sections/landing/Navegacion";
 
 // export default 
 export default function LandingPage(){
     return (
 
-      <main>
-        <About/>
-        <Abot/>
-        <More />
-        <Carousel />
-        <CTF/>
-        <Footer />
-      </main>
+     <Fragment>
+      <Navegacion/>
+       <main>
+         <About/>
+         <Abot/>
+         <More />
+         <Carousel />
+         <CTF/>
+         <Footer />
+       </main>
+     </Fragment>
     )
 }
 
