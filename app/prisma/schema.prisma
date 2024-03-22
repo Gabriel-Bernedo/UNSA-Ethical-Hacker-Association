@@ -6,9 +6,9 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql" //sqlite
-  url      = env("POSTGRES_PRISMA_URL") //DATABASE_URL
-  directUrl = env("POSTGRES_URL_NON_POOLING") //NONE
+  provider = "sqlite" // postgresql
+  url      = env("DATABASE_URL") //L POSTGRES_PRISMA_URL
+  // directUrl = env("POSTGRES_URL_NON_POOLING") //NONE
 }
 
 model Account {
