@@ -15,7 +15,7 @@ function useIndex ({begin, length}) {
   return {index, setIndex, nextIndex, previousIndex}
 }
 
-export default function Carousel({data}) {
+export default function MyCarousel({data}) {
   const {index, nextIndex, previousIndex} = useIndex({length: data.length, begin:0})
 
   return (
