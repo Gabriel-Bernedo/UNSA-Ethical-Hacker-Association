@@ -68,7 +68,7 @@ export default function CTF() {
 
 
   return (
-    <div id="CTF" className="flex flex-col h-screen">
+    <div id="CTF" className="flex flex-col">
       <h1 className="text-5xl text-semibold text-center m-8">
         Actividades: 
       </h1>

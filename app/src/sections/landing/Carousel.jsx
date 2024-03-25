@@ -36,10 +36,9 @@ import Carousel from '@/components/ui/carousels/Carousel';
 
 export default function LandingPage(){
     return (
-		<div id="Conocimiento" className="flex flex-col h-screen">
+		<div id="Conocimiento" className="flex-col h-dvh hidden md:flex">
 			<h1 className='text-5xl text-semibold text-center m-8'> Algunos temas relacionados son :</h1>
 			<Carousel data={carouselcontent}/>
-			
 		</div>
 				
     )
