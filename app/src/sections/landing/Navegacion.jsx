@@ -1,6 +1,7 @@
-'use client'
+
 import React from 'react'
 import Image from 'next/image'
+import NavButton from '@/components/ui/disclosures/NavButton'
 const navigation = [
     {
         label: "Home",
@@ -9,7 +10,6 @@ const navigation = [
     {
         label: "Nosotros",
         href: "./#Nosotros",
-        className: "sm:none"
     },
     {
         label: "Informacion",
@@ -18,34 +18,22 @@ const navigation = [
     {
         label: "Conocimiento",
         href: "./#Conocimiento",
-        className: "sm:none"
     },
     {
         label: "CTF",
         href: "./#CTF",
-        className : "",
     }
 ]
+import MiniNav from '@/components/ui/navs/MiniNav'
 
 export default function Navegacion(){
     return (
-            <header className="flex flex-col items-center justify-between md:max-w-full px-4 md:px-6 py-4 md:flex-row fixed top-0 z-50 w-full backdrop-blur bg-secondary-2 bg-opacity-30">
-                <a href="/" className=" z-10 active">
-                    <Image src="/logos/logonew.svg" className="w-24 p-0 g-image" height={40} width={40} alt="" priority/>
+            <header className="flex items-center justify-end md:max-w-full px-4 md:px-6 py-4 md:flex-row fixed top-0 z-50 w-full backdrop-blur bg-secondary-2 bg-opacity-30">
+                <a href="/" className="z-10 absolute top-1 left-5 ">
+                    <Image src="/logos/logonew.svg" className="w-20 p-0 g-image" height={80} width={80} alt="" priority/>
                 </a>
-                <nav>
-                    <ul className="flex flex-row items-center px-6 py-4 gap-16 text-white bg-primary-3 rounded-lg">
-                        {navigation.map(function(e,i){
-                            return (
-                                <li className={e.className} key={i}>
-                                    <a href={e.href} target="_self">
-                                        {e.label}
-                                    </a>
-                                </li>
-                            )
-                        })}
-                    </ul>
-                </nav>
+                <MiniNav nav={navigation}/>
+                <NavButton nav={navigation} className="relative right-0 p-4 bg-primary-3 rounded-lg"/>
             </header>
     )
 }
