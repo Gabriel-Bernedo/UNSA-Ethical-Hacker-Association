@@ -4,9 +4,9 @@ import InfoCard from '@/components/ui/cards/InfoCard'
 
 export default function Info() {
   return (
-    <div className="mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3 p-2 ">
+    <div className="mx-4 max-w-7xl z-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 p-2 ">
       {about.info.map(function(e,i){
-        return (<InfoCard data={e} key={i}/>)
+        return (<InfoCard data={e} key={i} className={(i==2) ? "md:col-span-2 lg:col-span-1" : ""}/>)
       })}
     </div>
   )

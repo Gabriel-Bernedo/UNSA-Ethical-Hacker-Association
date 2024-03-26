@@ -6,7 +6,7 @@ import { Fragment } from 'react'
 import Image from 'next/image'
 export default function CTFLab({onLabOpen, onLabClose}) {
   return (
-    <div className="gap-4 p-4 justify-center grid lg:grid-cols-3">
+    <div className="gap-4 p-8 justify-center grid lg:grid-cols-3 md:grid-cols-2">
       {/* INTRODUCTORY LAB */}
       <LabCTF
           label="Hola CTF"

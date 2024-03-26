@@ -12,19 +12,19 @@ import Carousel from "@/sections/landing/Carousel";
 import Footer from "@/sections/landing/Footer";
 import CTF from "../sections/landing/CTF";
 import Navegacion from "@/sections/landing/Navegacion";
-
+import Activities from "@/sections/landing/Activities";
 // export default 
 export default function LandingPage(){
     return (
 
      <Fragment>
       <Navegacion/>
-       <main>
+       <main className="w-full">
          <About/>
          <Abot/>
          <More />
          <Carousel />
-         <CTF/>
+         <Activities />
          <Footer />
        </main>
      </Fragment>

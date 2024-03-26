@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@material-tailwind/react": "^2.1.9",
-    "reactjs-popup": "^2.0.6"
-  }
-}

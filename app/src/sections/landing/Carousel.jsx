@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import { Carousel,Typography, Button } from "@material-tailwind/react";
 
 const carouselcontent = [
 	{
@@ -33,42 +32,13 @@ const carouselcontent = [
 		cover: "bg-wallpaper-steg",
 	}
 ]
+import Carousel from '@/components/ui/carousels/Carousel';
 
 export default function LandingPage(){
     return (
-		<div id="Conocimiento" className="flex flex-col h-screen">
+		<div id="Conocimiento" className="flex-col h-screen hidden md:flex pb-4">
 			<h1 className='text-5xl text-semibold text-center m-8'> Algunos temas relacionados son :</h1>
-			<Carousel className="rounded-xl" id=''>
-				{carouselcontent.map(function(e,i){
-					return(
-						<div key={i} className={"relative h-full w-full bg-cover " + e.cover}>
-							<div className="absolute inset-0 grid h-full w-full place-items-start bg-black/75">
-								<div className="ml-8 p-12 w-3/5 text-start ">
-									<Typography
-									variant="h1"
-									color="white"
-									className="mb-4 text-3xl uppercase text-justify"
-									>
-										{e.title}
-									</Typography>
-									<Typography
-									variant="lead"
-									color="white"
-									className="opacity-80 text-justify text-xl"
-									>
-										{e.body}
-									</Typography>
-									{/* <div className="flex justify-center gap-3">
-									<Button size="sm" color="white" className="pt-2">
-										Más información
-									</Button>
-									</div> */}
-								</div>
-							</div>
-						</div>
-					)
-				})}
-			</Carousel>
+			<Carousel data={carouselcontent} render/>
 		</div>
 				
     )
