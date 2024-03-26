@@ -21,7 +21,7 @@ const navigation = [
     },
     {
         label: "CTF",
-        href: "./#CTF",
+        href: "./#Actividades",
     }
 ]
 import MiniNav from '@/components/ui/navs/MiniNav'

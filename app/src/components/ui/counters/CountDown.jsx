@@ -6,7 +6,7 @@ const defaultContainerClassName = "flex flex-col items-center justify-center"
 const defaultFullContainerClassName = ""
 const defaultTimeClassName = "text-5xl"
 const defaultDateClassName = "text-sm"
-export const timeStamp = 1711060200000 // new Date().getTime() + 10000 
+export const timeStamp = 1711990800000 // new Date().getTime() + 10000 
 
 function useDate(){
   const [days, hours, minutes, seconds] = [useRef(null),useRef(null),useRef(null),useRef(null)]
@@ -52,7 +52,7 @@ function useCountDown({timeStamp}){
   }
 
   setInterval(updateCountdown, SECOND)
-  updateCountdown()
+  setInterval(updateCountdown, 1)
   return {days, hours, minutes, seconds}
 }
 
@@ -60,7 +60,7 @@ export default function CountDown({timeClassName, dateClassName, containerClassN
   const {days, hours, minutes, seconds} = useCountDown({timeStamp})
   return (
     <section className="my-4 flex flex-col gap-y-10 justify-center items-center">
-      <Image src="/logos/logonew.svg" className="p-0 g-image" height={150} width={150} alt="" priority/>
+      <Image src="/logos/logonew.svg" className="p-0 g-image" height={200} width={200} alt="" priority/>
       <div className={fullContainerClassName || "flex gap-5"} data-date>
         <div className={defaultContainerClassName} data-days>
           <span ref={days} className={defaultTimeClassName}>00</span>

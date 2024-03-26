@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import CarouselItem from './CarouselItem'
 import { Carousel, Typography } from '@material-tailwind/react'
@@ -15,39 +16,25 @@ function useIndex ({begin, length}) {
   return {index, setIndex, nextIndex, previousIndex}
 }
 
-export default function MyCarousel({data}) {
+
+function renderItem({render, item, key}){
+  if(render){
+    return <CarouselItem item={item} key={key}/>
+  } else {
+    const Item = item
+    return <Item />
+  }
+}
+
+
+
+export default function MyCarousel({data, className, render}) {
   const {index, nextIndex, previousIndex} = useIndex({length: data.length, begin:0})
 
   return (
-		<Carousel className="rounded-xl" id=''>
-			{data.map(function(e,i){
-				return(
-					<div key={i} className={"relative h-full w-full bg-cover " + e.cover}>
-						<div className="absolute inset-0 grid h-full w-full place-items-start bg-black/75">
-							<div className="ml-8 p-12 w-3/5 text-start ">
-								<Typography
-								variant="h1"
-								color="white"
-								className="mb-4 text-3xl uppercase text-justify"
-								>
-									{e.title}
-								</Typography>
-								<Typography
-								variant="lead"
-								color="white"
-								className="opacity-80 text-justify text-xl"
-								>
-									{e.body}
-								</Typography>
-								<div className="flex justify-center gap-3">
-								{/* // <Button size="sm" color="white" className="pt-2">
-								// 	Más información
-								// </Button> */}
-								</div>
-							</div>
-						</div>
-					</div>
-				)
+		<Carousel className={className || "rounded-xl"}>
+			{data.map(function(item,key){
+				return renderItem({render,item,key})
 			})}
 		</Carousel>
   )
