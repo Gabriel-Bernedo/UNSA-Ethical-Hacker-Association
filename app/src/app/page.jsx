@@ -1,24 +1,42 @@
-import {index} from "@/components/data/data";
 
-import Top from "@/sections/index/Top";
-import Hero from "@/sections/index/Hero";
-import MyBar from "@/components/ui/bars/MyBar";
-import MyImage from "@/components/images/MyImage";
 import { Fragment } from "react";
 import About from "@/sections/landing/About"
 import Abot from "@/sections/landing/Abot";
 import More from "@/sections/landing/More";
 import Carousel from "@/sections/landing/Carousel";
 import Footer from "@/sections/landing/Footer";
-import CTF from "../sections/landing/CTF";
-import Navegacion from "@/sections/landing/Navegacion";
+import Navegacion from "@/components/ui/navs/Navigation";
 import Activities from "@/sections/landing/Activities";
-// export default 
+// export default
+
+const navigation = [
+  {
+      label: "Home",
+      href: "./#Home",
+  },
+  {
+      label: "Nosotros",
+      href: "./#Nosotros",
+  },
+  {
+      label: "Informacion",
+      href: "./#Informacion",
+  },
+  {
+      label: "Conocimiento",
+      href: "./#Conocimiento",
+  },
+  {
+      label: "Actividades",
+      href: "./#Actividades",
+  }
+]
+
 export default function LandingPage(){
     return (
 
      <Fragment>
-      <Navegacion/>
+      <Navegacion nav={navigation}/>
        <main className="w-full">
          <About/>
          <Abot/>

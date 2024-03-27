@@ -1,11 +1,11 @@
-import { Inter } from "next/font/google";
+import { Quicksand as Font } from "next/font/google";
 import "./globals.css";
 
-import Navegacion from '@/sections/landing/Navegacion'
+import Navegacion from '@/components/ui/navs/Navigation'
 
 import Provider from "@/hooks/providers";
 import HeaderNav from "@/components/ui/navs/HeaderNav";
-const inter = Inter({ subsets: ["latin"] });
+const inter = Font({ subsets: ["latin"] });
 
 export const metadata = {
   title: "UNSA Ethical Hacker Association",

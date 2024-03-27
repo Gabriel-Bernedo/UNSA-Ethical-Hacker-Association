@@ -22,7 +22,7 @@ function renderItem({render, item, key}){
     return <CarouselItem item={item} key={key}/>
   } else {
     const Item = item
-    return <Item />
+    return <Item key={key} />
   }
 }
 

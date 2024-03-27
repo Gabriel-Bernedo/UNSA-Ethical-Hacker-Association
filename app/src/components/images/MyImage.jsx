@@ -11,15 +11,15 @@ const data = {
     height: 100
   },
   "logo": {
-    className: "relative dark:drop-shadow-bitLight dark:invert",
-    src: "/file.png",
+    className: "",
+    src: "/logos/logonew.svg",
     alt: "UEHA",
-    width: 180,
-    height: 180
+    width: 300,
+    height: 300
   },
   "logo-item" : {
-    className: "relative dark:drop-shadow-bitDark",
-    src: "/file.png",
+    className: "",
+    src: "/logos/logonew.svg",
     alt: "UEHA",
     width: 80,
     height: 80

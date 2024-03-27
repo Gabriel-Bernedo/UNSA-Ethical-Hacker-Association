@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "sqlite" // postgresql
-  url      = env("DATABASE_URL") //L POSTGRES_PRISMA_URL
+  url      = env("DATABASE_URL") // POSTGRES_PRISMA_URL
   // directUrl = env("POSTGRES_URL_NON_POOLING") //NONE
 }
 
