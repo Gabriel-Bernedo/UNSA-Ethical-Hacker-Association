@@ -1,6 +1,7 @@
 import {withAuth} from "next-auth/middleware";
 import { NextResponse } from "next/server";
 
+//probablemente sujeto a cambios, no se incluye la ruta de la api, solo las rutas para las vistas
 export default withAuth(
     function middleware(req) {
         let condicion = (req.nextUrl.pathname.startsWith("/createUser") || req.nextUrl.pathname.startsWith("/updateAdmin"));
