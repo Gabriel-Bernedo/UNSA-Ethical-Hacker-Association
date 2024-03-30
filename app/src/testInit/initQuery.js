@@ -2,6 +2,8 @@ const { PrismaClient } = require('@prisma/client');
 const bcrypt = require('bcrypt');
 const prisma = new PrismaClient();
 
+//este archivo debe ejecutarse primero para crear los roles y el usuario administrador
+
 async function main() {
     await createRole();
     await createAdmin();
