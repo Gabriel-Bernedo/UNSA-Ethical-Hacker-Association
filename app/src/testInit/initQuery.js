@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const prisma = new PrismaClient();
 
 //este archivo debe ejecutarse primero para crear los roles y el usuario administrador
+//comando: node src/testInit/initQuery.js
 
 async function main() {
     await createRole();
