@@ -6,145 +6,45 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite" // postgresql
-  url      = env("DATABASE_URL") //L POSTGRES_PRISMA_URL
-  // directUrl = env("POSTGRES_URL_NON_POOLING") //NONE
+  provider  = "postgresql"
+  url  	    = env("DATABASE_URL")
+}
+
+model Role {
+  id          Int       @id
+  description String    @unique
+  users  User[]
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  password      String?
+  image         String?
+  roleId         Int
+
+  accounts      Account[]
+  role  Role @relation(fields: [roleId], references: [id])
+
 }
 
 model Account {
   id                 String  @id @default(cuid())
-  userId             String  @map("user_id")
+  userId             String
   type               String
   provider           String
-  providerAccountId  String  @map("provider_account_id")
-  refresh_token      String?
-  access_token       String?
+  providerAccountId  String
+  refresh_token      String?  @db.Text
+  access_token       String?  @db.Text
   expires_at         Int?
   token_type         String?
   scope              String?
-  id_token           String?
+  id_token           String?  @db.Text
   session_state      String?
-  oauth_token_secret String?
-  oauth_token        String?
 
-  user User @relation(fields:[userId], references:[id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
 }
-
-model Session {
-  id           String   @id @default(cuid())
-  sessionToken String   @unique@map("session_token")
-  userId       String   @map("user_id")
-  expires      DateTime
-  user         User     @relation(fields:[userId], references:[id], onDelete: Cascade)
-}
-
-model User {
-  id            String     @id @default(cuid())
-  email         String    @unique
-  emailVerified DateTime?
-  image         String?
-  name          String?
-  password      String    @default(cuid())
-  token         String    @default(cuid())
-  createdAt     DateTime  @default(now()) @map(name: "created_at")
-  updatedAt     DateTime  @updatedAt      @map(name: "updated_at")
-  roles         RoleAssignment[]
-  resources     Resource[]
-  news          News[]
-  sessions      Session[]
-  accounts      Account[]
-  @@map (name:  "users")
-}
-
-model VerificationToken {
-  id         Int      @id @default(autoincrement())
-  identifier String
-  token      String   @unique
-  expires    DateTime
-
-  @@unique([identifier, token])
-}
-
-model Role {
-  id            String    @id @default(cuid())
-  name          String
-  details       String?
-  editable      Boolean   @default(true)
-  grantable     Boolean   @default(true)
-  createdAt     DateTime  @default(now()) @map(name: "created_at")
-  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
-  users         RoleAssignment[]
-  permissions   PermissionAssignment[]
-}
-
-model RoleAssignment {
-  user          User @relation(fields: [userId], references: [id])
-  userId        String
-  role          Role @relation(fields: [roleId], references: [id])
-  roleId        String
-  assignedBy    String
-  assignedAt    DateTime @default(now())
-  @@id([roleId, userId])
-
-}
-
-model Permission{
-  id            String @id @default(cuid())
-  name          String
-  details       String
-  active        Boolean @default(true)
-  createdAt     DateTime  @default(now()) @map(name: "created_at")
-  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
-  roles         PermissionAssignment[]
-}
-
-model PermissionAssignment{
-  role          Role @relation(fields: [roleId], references: [id])
-  roleId        String
-  permission    Permission @relation(fields: [permissionId], references: [id])
-  permissionId  String
-  assignedBy    String
-  assignedAt    DateTime @default(now())
-
-  @@id([roleId, permissionId])
-}
-
-model Resource{
-  id            String @id @default(cuid())
-  name          String
-  details       String?
-  href          String?
-  imgRef        String?
-  visible       Boolean @default(true)
-  private       Boolean @default(true)
-  resourceType  ResourceType @relation(fields: [type], references: [id])
-  type          Int
-  author        User @relation(fields: [authorId], references: [id])
-  authorId      String
-  createdAt     DateTime  @default(now()) @map(name: "created_at")
-  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
-}
-
-model ResourceType {
-  id            Int @id @default(autoincrement())
-  name          String
-  grantable     Boolean @default(true)
-  resource      Resource[]
-  createdAt     DateTime  @default(now()) @map(name: "created_at")
-  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
-}
-
-model News {
-  id            String @id @default(cuid())
-  title         String
-  content       String
-  verified      Boolean @default(true)
-  visible       Boolean @default(true)
-  createdAt     DateTime @default(now()) @map(name: "created_at")
-  updatedAt     DateTime @updatedAt
-  author        User @relation(fields: [authorId], references: [id])
-  authorId      String
-}
-

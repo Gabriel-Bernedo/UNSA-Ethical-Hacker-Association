@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@schemas/*": ["./src/schemas/*"],
+      "@db/*": ["./src/libs/*"],
+      "@services": ["./src/services/*"]
     }
   }
 }
