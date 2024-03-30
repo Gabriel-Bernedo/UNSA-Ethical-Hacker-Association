@@ -9,7 +9,7 @@ const getUserByEmail = async (data) => {
         });
         return userFound;
     } catch (error) {
-        return null
+        return null;
     }
 }
 
@@ -22,7 +22,7 @@ const getUserById = async (data) => {
         });
         return userFound;
     } catch (error) {
-        return null
+        return null;
     }
 }
 

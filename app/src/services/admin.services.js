@@ -13,7 +13,7 @@ const setRole = async (emailAdmin, roleIdAdmin) => {
         });
         return adminUpdate;
     } catch (error) {
-        return null
+        return null;
     }
 }
 
