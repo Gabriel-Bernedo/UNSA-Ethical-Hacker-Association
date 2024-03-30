@@ -3,6 +3,7 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 const bcrypt = require('bcrypt');
 const userServices = require("@/services/user.services");
 
+//credenciales para iniciar sesion
 const authOptions = {
     providers: [
         CredentialsProvider({
