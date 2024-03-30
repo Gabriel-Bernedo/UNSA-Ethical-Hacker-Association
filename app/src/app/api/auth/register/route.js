@@ -7,7 +7,6 @@ export async function POST(request) {
     const data = await request.json();
 
     const result = registerSchema.safeParse(data);
-
     if (!result.success) {
         return NextResponse.json(result.error);
     }
