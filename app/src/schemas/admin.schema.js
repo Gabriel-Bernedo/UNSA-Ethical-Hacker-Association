@@ -5,7 +5,7 @@ const adminSchema = z.object({
         required_error: "Email is required"
     }).email(),
     roleId: z.number().max(3).min(0)
-})
+});
 
 module.exports = {
     adminSchema
