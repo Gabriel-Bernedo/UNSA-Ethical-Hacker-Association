@@ -140,8 +140,8 @@ export default function CTF({flag}) {
         </TabsHeader>
         <TabsBody>
             {data.map(({ value, desc, content }) => (
-            <TabPanel key={value} value={value} className="text-white font-bold text-justify">
-                <p className="p-2 bg-primary-2 rounded-lg text-xs">
+            <TabPanel key={value} value={value} className="text-black font-bold text-justify">
+                <p className="p-2 bg-secondary-2 rounded-lg text-xs">
                   {desc}
                 </p>
                 {content}

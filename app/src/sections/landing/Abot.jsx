@@ -5,7 +5,7 @@ import WhatsappButton from '@/components/ui/buttons/WhatsappButton'
 export default function LandingPage(){
     return (
         <VibringContainer>
-            <section id="Nosotros" className="flex align-center items-center justify-center overflow-hidden p-5 h-dvh">
+            <section id="Nosotros" className="flex align-center items-center justify-center overflow-hidden p-5 h-screen">
                 <div className="md:grid md:grid-cols-3 items-center gap-8 lg:mx-16">
                     <div className="sm:w-1/1 md:p-5 p-3 col-span-2">
                         <div className="text">

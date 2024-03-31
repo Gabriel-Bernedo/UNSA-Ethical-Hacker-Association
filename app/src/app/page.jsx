@@ -19,7 +19,7 @@ export default function LandingPage(){
 
      <Fragment>
       <Navegacion/>
-       <main>
+       <main className="w-full">
          <About/>
          <Abot/>
          <More />
