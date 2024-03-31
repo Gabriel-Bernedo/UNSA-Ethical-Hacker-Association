@@ -1,14 +1,24 @@
 import React from 'react'
 import Link from 'next/link'
+import { Disclosure } from '@headlessui/react'
 const itemDefaultClassName = ""
-export default function NavItem({item}) {
+export default function NavItem({item, inPanel}) {
   return (
     <li className={item?.className || itemDefaultClassName}>
-      <Link
+      {inPanel? 
+        <Disclosure.Button
+        as={Link}
         href={item.href}
-      >
-        {item.label}
-      </Link>
+        >
+          {item.label}
+        </Disclosure.Button>
+      :
+        <Link
+          href={item.href}
+        >
+          {item.label}
+        </Link>
+      }
     </li>
   )
 }

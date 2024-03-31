@@ -19,7 +19,7 @@ export default function DownArrow() {
       >
         <Image
           src="/flecha.png"
-          className="dark:invert p-2 text-3xl opacity-50 hover:opacity-100 transition-colors border-slate-700 hover:border rounded-full hover:bg-slate-900 hover:bg-opacity-50 animate-bounce delay-200 duration-300 ease-in-out"
+          className="invert p-2 text-3xl opacity-50 hover:opacity-100 transition-colors border-slate-700 hover:border rounded-full hover:bg-slate-900 hover:bg-opacity-50 animate-bounce delay-200 duration-300 ease-in-out text-white"
           width={50}
           height={50}	     
         />

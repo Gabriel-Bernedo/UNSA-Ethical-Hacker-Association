@@ -9,12 +9,12 @@ export default function Top() {
         imgName="vercel"
         side="top-right"
       />*/}
-      <PartnerMainContainer 
+      {/* <PartnerMainContainer 
         href="https://www.unsa.edu.pe/"
         label="From "
         imgName="unsa"
         side="top-left"
-      />      
+      />       */}
     </section>
   )
 }

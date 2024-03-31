@@ -9,43 +9,24 @@ import Navegacion from "@/components/ui/navs/Navigation";
 import Activities from "@/sections/landing/Activities";
 // export default
 
-const navigation = [
-  {
-      label: "Home",
-      href: "./#Home",
-  },
-  {
-      label: "Nosotros",
-      href: "./#Nosotros",
-  },
-  {
-      label: "Informacion",
-      href: "./#Informacion",
-  },
-  {
-      label: "Conocimiento",
-      href: "./#Conocimiento",
-  },
-  {
-      label: "Actividades",
-      href: "./#Actividades",
-  }
-]
+import { landingNav as navigation } from "@/data/navigation";
+import Asociations from "@/sections/about/Asociations";
 
 export default function LandingPage(){
     return (
 
-     <Fragment>
-      <Navegacion nav={navigation}/>
-       <main className="w-full">
-         <About/>
-         <Abot/>
-         <More />
-         <Carousel />
-         <Activities />
-         <Footer />
-       </main>
-     </Fragment>
+      <Fragment>
+        <Navegacion nav={navigation}/>
+        <main className="w-full">
+          <About/>
+          <Abot/>
+          <More />
+          <Asociations/>
+          <Carousel />
+          <Activities />
+          <Footer />
+      </main>
+      </Fragment>
     )
 }
 

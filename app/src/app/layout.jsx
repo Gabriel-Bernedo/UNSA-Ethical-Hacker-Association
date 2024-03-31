@@ -1,11 +1,11 @@
 import { Quicksand as Font } from "next/font/google";
 import "./globals.css";
-
-import Navegacion from '@/components/ui/navs/Navigation'
+import localFont from 'next/font/local'
 
 import Provider from "@/hooks/providers";
 import HeaderNav from "@/components/ui/navs/HeaderNav";
 const inter = Font({ subsets: ["latin"] });
+const font = localFont({src: "../fonts/nexa/Nexa-Light.ttf"})
 
 export const metadata = {
   title: "UNSA Ethical Hacker Association",
@@ -15,12 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
-      <body className={inter.className + " bg-fixed h-full"}>
-        {/* <Provider> */}
+      <body className={font.className + " bg-fixed h-full"}>
+        <Provider>
         
           {/* <HeaderNav /> */}
           {children}
-        {/* </Provider> */}
+        </Provider>
       </body>
     </html>
   );

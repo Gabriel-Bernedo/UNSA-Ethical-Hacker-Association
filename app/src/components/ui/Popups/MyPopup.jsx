@@ -1,34 +1,96 @@
-import React from 'react'
-import Popup from 'reactjs-popup'
-export default function MyPopup({children, title, trigger, className}) {
-  let Children = children
+'use client'
+import React, { Fragment, useState } from 'react'
+import { Transition, Dialog } from '@headlessui/react'
+
+function useDialog({status = false}){
+  const [isOpen, setOpen] = useState(status)
+
+  function shiftDialog(){
+    setOpen(!isOpen)
+  }
+
+  function openDialog(){
+    setOpen(true)
+  }
+
+  function closeDialog(){
+    setOpen(false)
+  }
+
+  return {isOpen, shiftDialog, openDialog, closeDialog}
+}
+
+const defaultDialog = () => (
+  <div className="text-sm text-gray-500">
+    Dialogo de relleno
+  </div>
+)
+
+export default function MyPopup({children = defaultDialog, label, title, className}) {
+  const {isOpen, shiftDialog, closeDialog} = useDialog({})
+
   return (
-    <Popup
-      trigger={trigger}
-      modal
-    >
-      {close => {
-        return (
-          <div className={className || "bg-blue-700 bg-opacity-50 backdrop-blur border-double border-4 border-sky-500 p-2" }>
-            
-            <div className="flex justify-end p-2">
-              <button  className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" onClick={close}>
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd">
-                  </path>
-                </svg>
-              </button>
+    <Fragment>
+      <div className={className || "p-4 rounded-lg bg-secondary-2"}>
+        <button onClick={shiftDialog}>
+          {label}
+        </button>
+      </div>
+      <Transition appear show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-20" onClose={closeDialog}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black/25" />
+          </Transition.Child>
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-3xl font-medium leading-6 text-gray-900 text-center m-2"
+                  >
+                    {title}
+                  </Dialog.Title>
+                  {/* <div className="mt-2">
+                    <p className="text-sm text-gray-500">
+                      Your payment has been successfully submitted. We’ve sent
+                      you an email with all of the details of your order.
+                    </p>
+                  </div>
+
+                  <div className="mt-4">
+                    <button
+                      type="button"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      onClick={closeDialog}
+                    >
+                      Got it, thanks!
+                    </button>
+                  </div> */}
+                  {children}
+                </Dialog.Panel>
+              </Transition.Child>
             </div>
-            
-            { title && 
-              <div className="w-full border-bottom-[1px] border-gray-700 border-solid"> 
-                {title} 
-              </div>
-            }
-            <Children close={close}/>
           </div>
-        )
-      }}
-    </Popup>
+        </Dialog>
+
+      </Transition>
+    </Fragment>
   )
 }

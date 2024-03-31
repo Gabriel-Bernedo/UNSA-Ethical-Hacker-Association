@@ -1,5 +1,5 @@
+import { prisma } from "@/database/prisma"
 import {NextResponse} from "next/server"
-
 const BASE_URL = "http:localhost:3000" 
 
 function route(endpoint){
@@ -24,4 +24,9 @@ export async function GET (){
     }
   }
   return NextResponse.json(routes);
+}
+
+export async function POST(){
+  const data = await prisma.user.findMany()
+  return NextResponse.json({data})
 }

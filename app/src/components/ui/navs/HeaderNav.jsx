@@ -15,13 +15,6 @@ const NavItemsClassName="inline-block font-bold data-[active=false]:opacity-60 d
 const NavSectionClassName="flex gap-10 items-center "
 export default function HeaderNav() {
 
-  const router = useRouter()
-  const isActive = function(pathname){
-    return router.pathname === pathname
-  }
-
-  const {data: session, status} = useSession()
-
   let 
   left = (
     <div className={NavSectionClassName + "justify-start left-0"}>

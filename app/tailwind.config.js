@@ -45,7 +45,8 @@ module.exports = withMT({
         "secondaryFullLight": [
           "0 -12.5px 12.5px rgba(100, 116, 139, 1)",
           "0 12.5px 12.5px rgba(156, 163, 175, 1)",
-      ],
+        ],
+        "standLight" : "0 0 20px rgba(156, 163, 175, 0.5)",
       },
       colors: {
         "primary" : {

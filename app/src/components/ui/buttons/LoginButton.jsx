@@ -1,12 +1,11 @@
 import React from 'react'
-import MyActionButton from './MyActionButton'
-export default function LoginButton({className, isActive, label}) {
+
+import { signIn } from 'next-auth/react'
+
+export default function LoginButton({className, label}) {
   return (
-    <MyActionButton 
-      href="/api/auth/signin"
-      className={className}
-      isActive={isActive === undefined ? true: isActive}
-      label={label || "Log In"}
-    />
+    <button onClick={signIn} className={className}>
+      {label || "Log In"}
+    </button>
   )
 }

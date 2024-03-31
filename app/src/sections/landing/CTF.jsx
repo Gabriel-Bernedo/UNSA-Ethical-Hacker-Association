@@ -72,7 +72,7 @@ export default function CTF() {
   }
 
   return (
-    <div className='grid p-4 grid-cols-1 md:grid-cols-2 gap-4 mx-12 h-full'>
+    <div className='flex flex-col justify-evenly md:grid p-4 grid-cols-1 md:grid-cols-2 gap-4 mx-12 h-full'>
       <div className="p-2 
         lg:col-span-1 md:col-span-2">
         <h3 className="font-bold text-5xl"> Capture the Flag (CTF) </h3>
@@ -82,7 +82,7 @@ export default function CTF() {
         </p>
       </div>
       <div className="m-4 bg-secondary-2 rounded-lg p-4 text-black
-        lg:row-start-2 text-center">
+        lg:row-start-2 text-center hidden md:block">
         <div>
           <h3 className='text-3xl font-bold'>
             UEHA - CTF - LAB

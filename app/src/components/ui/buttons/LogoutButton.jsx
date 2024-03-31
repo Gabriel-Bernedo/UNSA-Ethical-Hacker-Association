@@ -1,14 +1,9 @@
 import React from 'react'
-import MyActionButton from './MyActionButton'
-
-export default function LogoutButton({className, isActive, label, onClick}) {
+import { signOut } from 'next-auth/react'
+export default function LogoutButton({className, label}) {
   return (
-    <MyActionButton 
-      href="/api/auth/signout"
-      className={className}
-      isActive={isActive === undefined ? true: isActive}
-      label={label || "Log Out"}
-      onClick={onClick}
-    />
+    <button onClick={signOut} className={className}>
+      {label || "Log In"}
+    </button>
   )
 }

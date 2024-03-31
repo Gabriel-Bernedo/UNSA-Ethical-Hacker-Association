@@ -7,7 +7,7 @@ export default function VerticalNav({nav}) {
     <nav>
       <ul className="flex flex-col items-center px-6 py-4 gap-16 text-white bg-primary-3 rounded-lg">
         {nav.map((e,i)=>{
-          return <NavItem item={e} key={i}/>
+          return <NavItem item={e} key={i} inPanel/>
         })}
       </ul>
     </nav>
