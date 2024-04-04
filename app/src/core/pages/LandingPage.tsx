@@ -12,9 +12,7 @@ import Footer from '@/sections/landing/Footer'
 
 import { landingNav as navigation} from '@/data/navigation'
 
-interface PageProps {
-
-}
+import { PageProps } from '@/types/page'
 
 export const LandingPage : FC<PageProps> = () => {
   return (

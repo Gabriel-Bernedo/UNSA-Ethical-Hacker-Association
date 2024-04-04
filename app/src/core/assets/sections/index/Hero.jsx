@@ -1,6 +1,5 @@
 import React from 'react'
-import VibringContainer from '@/dominio/components/ui/containers/VibringContainer'
-
+import VibringContainer from '@/static-components/containers/VibringContainer'
 export default function Hero({data, hero}) {
   return (
     <VibringContainer>
