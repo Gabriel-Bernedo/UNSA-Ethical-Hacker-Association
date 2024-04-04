@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 import {BannerProps} from '@/types/banner'
 
-const bannerClass = "max-h-screen w-full"
+const bannerClass = "max-h-screen w-full overflow-y-auto"
 
 export const Banner: FC<BannerProps> = ({children, className, addClass}) => {
   const compClass = `h-fit ${className || bannerClass} ${addClass}`

@@ -2,7 +2,7 @@
 import React from 'react'
 import CTF from './CTF'
 import Soon from './Soon'
-import MyCarousel from '@/dominio/components/ui/carousels/Carousel'
+import MyCarousel from '@/static-components/carousels/Carousel'
 const data = [
   CTF,
   Soon,

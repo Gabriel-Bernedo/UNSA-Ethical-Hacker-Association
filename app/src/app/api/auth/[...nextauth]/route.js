@@ -20,8 +20,8 @@
 
 import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
-import bcrypt from "bcrypt"
-import userServices from '@/services/user.services'
+import {compare} from "bcrypt"
+import { createUser, getUserByEmail, getUserById } from '@/services/user.services';
 
 // const bcrypt = require('bcrypt');
 // const userServices = require("@/adaptadores/user.services");
@@ -36,13 +36,13 @@ const authOptions = {
                 password: {label: "Password", type: "password"}
             },
             async authorize(credentials, req) {
-                const userFound = await userServices.getUserByEmail(credentials.email);
+                const userFound = await getUserByEmail(credentials.email);
                 console.log(userFound);
                 if (!userFound) {
                     throw new Error("User not found");
                 }
 
-                const matchPassword = await bcrypt.compare(credentials.password, userFound.password);
+                const matchPassword = await compare(credentials.password, userFound.password);
                 if (!matchPassword) throw new Error("Wrong password");
 
                 return {

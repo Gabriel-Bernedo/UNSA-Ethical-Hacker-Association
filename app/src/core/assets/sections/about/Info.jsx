@@ -1,7 +1,6 @@
 import React from 'react'
-import { about } from '@/dominio/components/data/data'
-import InfoCard from '@/dominio/components/ui/cards/InfoCard'
-
+import { about } from '@/static-components/data/data'
+import InfoCard from '@/static-components/cards/InfoCard'
 export default function Info() {
   return (
     <div className="mx-4 z-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 p-2 ">

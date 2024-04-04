@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import {Disclosure} from '@headlessui/react'
-import NavBarIcon from '@/dominio/components/icons/NavBarIcon'
+import NavBarIcon from '@/resources/icons/NavBarIcon'
 import VerticalNav from '../navs/VerticalNav'
 export default function NavButton({nav, className}) {
   return (

@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import LabCTF from '@/dominio/components/ui/panels/LabCTF'
+import LabCTF from '@/static-components/panels/LabCTF'
 // import { Button } from '@material-tailwind/react'
 import { Fragment } from 'react'
 import Image from 'next/image'

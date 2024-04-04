@@ -1,11 +1,11 @@
 'use client'
 import React from 'react'
-import CountDown from '@/dominio/components/ui/counters/CountDown'
+import CountDown from '@/static-components/counters/CountDown'
 import CTFLab from './CTFLab'
 import { Fragment, useState } from 'react'
 import CTFlabo from './CTFlabo'
-import LabCTF from '@/dominio/components/ui/panels/LabCTF'
-import { timeStamp } from '@/dominio/components/ui/counters/CountDown'
+import LabCTF from '@/static-components/panels/LabCTF'
+import { timeStamp } from '@/static-components/counters/CountDown'
 
 const PadDefault = ({onStart, onClose}) => {
   const [enabled, setEnabled] = useState(timeStamp > (new Date().getTime()))
