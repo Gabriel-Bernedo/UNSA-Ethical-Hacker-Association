@@ -1,4 +1,4 @@
-import { prisma } from "@/database/prisma"
+import { prisma } from "@/services/database/prisma"
 import {NextResponse} from "next/server"
 const BASE_URL = "http:localhost:3000" 
 

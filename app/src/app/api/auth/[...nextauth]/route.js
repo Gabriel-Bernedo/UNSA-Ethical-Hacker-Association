@@ -20,8 +20,11 @@
 
 import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
-const bcrypt = require('bcrypt');
-const userServices = require("@/services/user.services");
+import bcrypt from "bcrypt"
+import userServices from '@/services/user.services'
+
+// const bcrypt = require('bcrypt');
+// const userServices = require("@/adaptadores/user.services");
 
 //credenciales para iniciar sesion
 const authOptions = {
@@ -47,7 +50,6 @@ const authOptions = {
                     name: userFound.name,
                     role: userFound.roleId
                 }
-
             }
         }),
     ],
@@ -64,7 +66,8 @@ const authOptions = {
                 return session
             }
         }
-    }
+    },
+    secret: process.env.SECRET
 };
 
 const handler = NextAuth(authOptions);

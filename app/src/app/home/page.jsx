@@ -1,11 +1,13 @@
-import Top from "@/sections/index/Top"
-import Hero from "@/sections/index/Hero"
-import MyBar from "@/components/ui/bars/MyBar"
-import { home } from "@/data/manager"
-import MyImage from "@/components/images/MyImage"
 import { Fragment } from "react"
-import Navigation from "@/components/ui/navs/Navigation"
 
+import MyBar from "@/dominio/components/ui/bars/MyBar"
+import MyImage from "@/dominio/components/images/MyImage"
+import Navigation from "@/dominio/components/ui/navs/Navigation"
+
+import Top from "@/dominio/sections/index/Top"
+import Hero from "@/dominio/sections/index/Hero"
+
+import { home } from "@/dominio/data/manager"
 const nav = [
   {
     label : "About",

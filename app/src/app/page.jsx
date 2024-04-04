@@ -1,16 +1,19 @@
 
 import { Fragment } from "react";
-import About from "@/sections/landing/About"
-import Abot from "@/sections/landing/Abot";
-import More from "@/sections/landing/More";
-import Carousel from "@/sections/landing/Carousel";
-import Footer from "@/sections/landing/Footer";
-import Navegacion from "@/components/ui/navs/Navigation";
-import Activities from "@/sections/landing/Activities";
-// export default
+// components
+import Navegacion from "@/dominio/components/ui/navs/Navigation";
 
-import { landingNav as navigation } from "@/data/navigation";
-import Asociations from "@/sections/about/Asociations";
+// sections
+import Hero from "@/dominio/sections/landing/Hero"
+import About from "@/dominio/sections/landing/About";
+import More from "@/dominio/sections/landing/More";
+import Carousel from "@/dominio/sections/landing/Carousel";
+import Footer from "@/dominio/sections/landing/Footer";
+import Activities from "@/dominio/sections/landing/Activities";
+import Asociations from "@/dominio/sections/about/Asociations";
+
+// data
+import { landingNav as navigation } from "@/dominio/data/navigation";
 
 export default function LandingPage(){
     return (
@@ -18,8 +21,8 @@ export default function LandingPage(){
       <Fragment>
         <Navegacion nav={navigation}/>
         <main className="w-full">
+          <Hero/>
           <About/>
-          <Abot/>
           <More />
           <Asociations/>
           <Carousel />
