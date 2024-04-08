@@ -21,15 +21,17 @@ export enum filterSetUp{
 }
 
 export function useFilter({setUp} : {setUp: filterSetUp}) : filterOptions{
+  const [title, setTitle] = useState<string>()
+  const handleTitle = (event) => {
+    setTitle(event.target?.value)
+  }
+  
   switch(setUp){
     case filterSetUp.none:
       return {}
 
     case filterSetUp.news:
-      const [title, setTitle] = useState<string>()
-      const handleTitle = (event) => {
-        setTitle(event.target?.value)
-      }
+      
       return {title: [title, handleTitle]}
       
     case filterSetUp.resources:

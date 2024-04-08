@@ -1,3 +1,3 @@
-import home from "./home.json"
+import data from "./home.json"
 
-export const home = home.es
+export const home = data.es
