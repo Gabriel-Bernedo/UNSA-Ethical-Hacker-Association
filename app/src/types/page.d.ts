@@ -1,5 +1,3 @@
-interface PageProps {
+export interface PageProps {
 
 }
-
-export const PageProps

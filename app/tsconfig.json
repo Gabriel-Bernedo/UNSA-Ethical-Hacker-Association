@@ -42,7 +42,7 @@
     "**/*.ts",
     "**/*.jsx",
     "**/*.tsx"
-  ],
+, "src/core/resources/data/news.mjs"  ],
   "exclude": [
     "node_modules"
   ]

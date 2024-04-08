@@ -1,24 +1,25 @@
 import React, { FC } from 'react'
 
 import {BannerProps} from '@/types/banner'
+import { Div } from './Component'
 
 const bannerClass = "max-h-screen w-full overflow-y-auto"
 
-export const Banner: FC<BannerProps> = ({children, className, addClass}) => {
-  const compClass = `h-fit ${className || bannerClass} ${addClass}`
+export const Banner: FC<BannerProps> = ({children, addClass}) => {
+  const className = `h-fit ${bannerClass}`
   return (
-    <div className={compClass}>
+    <Div className={className} addClass={addClass}>
       {children}
-    </div>
+    </Div>
   )
 }
 
-export const FullBanner: FC<BannerProps> = ({children, className, addClass}) => {
-  const compClass = `h-screen ${className || bannerClass} ${addClass}`
+export const FullBanner: FC<BannerProps> = ({children, addClass}) => {
+  const className = `h-screen ${bannerClass}`
   return (
-    <div className={compClass}>
+    <Div className={className} addClass={addClass}>
       {children}
-    </div>
+    </Div>
   )
 }
 
