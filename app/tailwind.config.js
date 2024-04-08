@@ -4,9 +4,9 @@ import animations from '@midudev/tailwind-animations'
 const withMT = require("@material-tailwind/react/utils/withMT");
 module.exports = withMT({
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
+    // "./pages/**/*.{js,ts,jsx,tsx}",
+    "./src/core/**/*.{js,ts,jsx,tsx,mdx}",
+    // "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     // "./node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
     // "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
@@ -27,6 +27,7 @@ module.exports = withMT({
         "wallpaper-ins": "url('/wallpapers/ins.webp')",
         "wallpaper-steg": "url('/wallpapers/steg.webp')",
         "wallpaper-hash": "url('/wallpapers/hash.webp')",
+        "wallpaper-noisy": "url('/wallpapers/noise wallpaper.avif')",
       },
       dropShadow: {
         "bitLight" : '0 10px 10px rgba(125, 70, 255, 0.25)',
@@ -45,7 +46,8 @@ module.exports = withMT({
         "secondaryFullLight": [
           "0 -12.5px 12.5px rgba(100, 116, 139, 1)",
           "0 12.5px 12.5px rgba(156, 163, 175, 1)",
-      ],
+        ],
+        "standLight" : "0 0 20px rgba(156, 163, 175, 0.5)",
       },
       colors: {
         "primary" : {

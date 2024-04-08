@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/types/*" : ["src/types/*"],
+      "@/base-components/*": ["src/core/assets/base-components/*"],
+      "@/static-components/*": ["src/core/assets/core-components/static/*"],
+      "@/dynamic-components/*": ["src/core/assets/core-components/function/*"],
+      "@/sections/*": ["src/core/assets/sections/*"],
+      "@/pages/*": ["src/core/pages/*"],
+      "@/hooks/*" : ["src/core/assets/hooks/*"],
+      "@/data/*": ["src/core/resources/data/*"],
+      "@/services/*" :["src/services/*"],
+      "@/resources/*": ["src/core/resources/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.js",
+    "**/*.ts",
+    "**/*.jsx",
+    "**/*.tsx"
+, "src/core/resources/data/news.mjs"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

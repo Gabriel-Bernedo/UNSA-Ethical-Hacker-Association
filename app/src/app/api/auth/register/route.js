@@ -1,6 +1,6 @@
-const {NextResponse} = require('next/server');
+import { registerSchema } from '@/services/database/schemas/auth.schema';
+import { NextResponse } from 'next/server';
 const bcrypt = require('bcrypt');
-const {registerSchema} = require('@/schemas/auth.schema');
 const userServices = require("@/services/user.services");
 
 export async function POST(request) {

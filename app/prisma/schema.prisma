@@ -3,10 +3,11 @@
 
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
 }
 
 datasource db {
-  provider  = "postgresql"
+  provider  = "sqlite"
   url  	    = env("DATABASE_URL")
 }
 
@@ -24,10 +25,8 @@ model User {
   password      String?
   image         String?
   roleId         Int
-
   accounts      Account[]
   role  Role @relation(fields: [roleId], references: [id])
-
 }
 
 model Account {
@@ -36,12 +35,12 @@ model Account {
   type               String
   provider           String
   providerAccountId  String
-  refresh_token      String?  @db.Text
-  access_token       String?  @db.Text
+  refresh_token      String?  
+  access_token       String?  
   expires_at         Int?
   token_type         String?
   scope              String?
-  id_token           String?  @db.Text
+  id_token           String?  
   session_state      String?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)

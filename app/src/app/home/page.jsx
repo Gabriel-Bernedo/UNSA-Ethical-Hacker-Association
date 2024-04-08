@@ -1,17 +1,23 @@
-import Top from "@/sections/index/Top"
-import Hero from "@/sections/index/Hero"
-import MyBar from "@/components/ui/bars/MyBar"
-import { index } from "@/components/data/data"
-import MyImage from "@/components/images/MyImage"
-export default function Home() {
+// import { Fragment } from "react"
+
+// import MyBar from "@/dominio/components/ui/bars/MyBar"
+// import MyImage from "@/dominio/components/images/MyImage"
+// import Navigation from "@/dominio/components/ui/navs/Navigation"
+
+// import Top from "@/dominio/sections/index/Top"
+// import Hero from "@/dominio/sections/index/Hero"
+
+// import { home } from "@/dominio/data/manager"
+import { Home } from "@/pages/Home"
+const nav = [
+  {
+    label : "About",
+    href : "/"
+  }
+]
+
+export default function Page() {
    return (
-     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-       <Top/>
-       <Hero 
-         data={index.intro.desc} 
-         hero={<MyImage imgName="logo"/>}
-       />
-       <MyBar data={index.nav} type="details"/>
-     </main>
+    <Home />
    )
  }

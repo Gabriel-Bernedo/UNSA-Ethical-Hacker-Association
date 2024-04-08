@@ -1,0 +1,375 @@
+{
+  "data": {
+    "name": "UNSA-Ethical-Hackers-Association"
+  },
+  "resources": {
+    "nav": [
+      {
+        "title": "Herramientas",
+        "href": "/resources/tools",
+        "img": "/herramientas.webp",
+        "desc": ""
+      },
+      {
+        "title": "Materiales",
+        "href": "/resources/materials",
+        "img": "/material.webp",
+        "desc": ""
+      },
+      {
+        "title": "Cursos",
+        "href": "/resources/courses",
+        "img": "/cursos.avif",
+        "desc": ""
+      }
+    ],
+    "tools": [
+      {
+        "name": "Putty",
+        "desc": "Emulador de terminal, consola Open-Source, aplicacion para transferencia de archivos, soporta SCP, SSH, Telnet, rlogin y raw socket connection",
+        "img": "",
+        "href": "https://www.putty.org/"
+      },
+      {
+        "name": "JSF",
+        "desc": "JavaScrips as Fuck, Ininteligible JS, para quien no conozca: los browser tambien compila",
+        "img": "",
+        "href": "https://jsfuck.com/"
+      },
+      {
+        "name": "Javascript Obfuscate and Encoder",
+        "desc": "Obfuscate JS :3",
+        "img": "",
+        "href": "https://www.cleancss.com/javascript-obfuscate/index.php"
+      },
+      {
+        "name": "JavaScript Obfuscator Tool",
+        "desc": "JS, pero dificil de entender :v",
+        "img": "",
+        "href": "https://obfuscator.io/"
+      },
+      {
+        "name": "AEM1K",
+        "desc": "Una pagina con una recopilacion de herramientas para JS",
+        "img": "",
+        "href": "https://aem1k.com/"
+      },
+      {
+        "name": "JStillery",
+        "desc": "Deobfuscating JS tool",
+        "img": "",
+        "href": "https://mindedsecurity.github.io/jstillery/"
+      },
+      {
+        "name": "Deobfuscate Javascript",
+        "desc": "Make unreadeable JS to a readable format",
+        "img": "",
+        "href": "http://deobfuscatejavascript.com/"
+      },
+      {
+        "name": "Beautifier.io",
+        "desc": "Make unreadeable code into a readable format (HTML, CSS, JS, React, JSON)",
+        "img": "",
+        "href": "https://beautifier.io/"
+      },
+      {
+        "name": "Burp Suite Community Edition",
+        "desc": "",
+        "img": "",
+        "href": "https://portswigger.net/burp/communitydownload"
+      },
+      {
+        "name": "XSS-proxy",
+        "desc": "",
+        "img": "",
+        "href": "https://xss-proxy.sourceforge.net/"
+      },
+      {
+        "name": "Post Swigger",
+        "desc": "",
+        "img": "",
+        "href": "https://portswigger.net/"
+      },{
+        "name": "Category:OWASP DirBuster Project",
+        "desc": "",
+        "img": "",
+        "href": "https://wiki.owasp.org/index.php/Category:OWASP_DirBuster_Project"
+      },
+      {
+        "name": "Injection Patterns",
+        "desc": "",
+        "img": "",
+        "href": "https://github.com/xmendez/wfuzz/blob/master/wordlist/Injections/Traversal.txt"
+      },
+      {
+        "name": "Git Tools",
+        "desc": "",
+        "img": "",
+        "href": "https://github.com/internetwache/GitTools"
+      },
+      {
+        "name": "Commix",
+        "desc": "",
+        "img": "",
+        "href": "sessionareawesomebutifitsecure"
+      },
+      {
+        "name": "SQL Injection Fuzz Strings",
+        "desc": "",
+        "img": "",
+        "href": "https://github.com/fuzzdb-project/fuzzdb/tree/master/attack/sql-injection"
+      },
+      {
+        "name": "SQL Map",
+        "desc": "",
+        "img": "",
+        "href": "https://sqlmap.org/"
+      },
+      {
+        "name": "Stegsolve ",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "SonicVisualiser ",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "DeepSound Audio stego",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "Steghide",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "Steganography Road Map",
+        "desc": "Roadmap para aprender algunos fundamentos de esteganografía",
+        "img": "",
+        "href": "https://wiki.bi0s.in/steganography/roadmap/"
+      },
+      {
+        "name": "wave",
+        "desc": "Libreria de python para introducir mensajes espectográficos en un audio",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "Audacity",
+        "desc": "Programa para editar audio : tambien como una alternativa para visualizar espectogramas en los audios",
+        "img": "",
+        "href": "https://www.audacityteam.org/"
+      },
+      {
+        "name": "Spam Mimic",
+        "desc": "Hace pasar data como spam",
+        "img": "",
+        "href": "https://www.spammimic.com/"
+      },
+      {
+        "name": "",
+        "desc": "",
+        "img": "",
+        "href": ""
+      },
+      {
+        "name": "",
+        "desc": "",
+        "img": "",
+        "href": ""
+      }
+    ],
+    "materials" : [
+      {
+        "title": "Learn SSH in 6 Minutes",
+        "type": "video",
+        "desc": "Secure Shell Protocol is un protocolo de conexion criptografico para ejecutar servicios de conexion seguros sobre una red insegura ...",
+        "img": "",
+        "href": "https://youtu.be/v45p_kJV9i4"
+      },
+      {
+        "title": "Serious Cryptography A Practical Introduction to Modern Encryption",
+        "type": "book",
+        "desc": "314 paginas de criptografía, a que no te lo esperabas",
+        "img": "",
+        "href": "https://theswissbay.ch/pdf/Books/Computer%20science/Cryptography/SeriousCryptography.pdf"
+      },
+      {
+        "title": "Cracking Codes with Python an Introduction to Building and Breaking Ciphers",
+        "type": "book",
+        "desc": "403 paginas de encriptacion con python, que bonito :3",
+        "img": "",
+        "href": "https://elhacker.info/manuales/Lenguajes%20de%20Programacion/Python/Cracking%20Codes%20with%20Python.pdf"
+      },
+      {
+        "title": "Operation Systems 1 - Introduction",
+        "type": "video",
+        "desc": "Introduccion a sistemas operativos :v , especialmente Linux",
+        "img": "",
+        "href": "https://youtu.be/5AjReRMoG3Y"
+      },
+      {
+        "title": "2 - Linux Core Commands",
+        "type": "video",
+        "desc": "Comandos de Linux :v",
+        "img": "",
+        "href": "https://youtu.be/LyKuUBKu6QI"
+      },
+      {
+        "title": "Introduction to Linux and Basic Linux Command for Begginers",
+        "type": "video",
+        "desc": "Linux :3",
+        "img": "",
+        "href": "https://youtu.be/IVquJh3DXUA"
+      },
+      {
+        "title": "Linux File System/Structure Explained",
+        "type": "video",
+        "desc": "Estructura del sistema de archivos de linux :v",
+        "img": "",
+        "href": "https://youtu.be/HbgzrKJvDRw"
+      },
+      {
+        "title": "Linux Terminal Introduction",
+        "type": "video",
+        "desc": "Introducction a la terminal de Linux",
+        "img": "",
+        "href": "https://youtu.be/SkB-eRCzWIU"
+      },
+      {
+        "title": "Linux Command Line (07) Viewing Files (cat, more, less head, tail)",
+        "type": "video",
+        "desc": "Mas comandos de linux, para leer archivos",
+        "img": "",
+        "href": "https://youtu.be/msefiwMtZpA"
+      },
+      {
+        "title": "Linux Sysadmin Basics 4.1 - Filtering Output and Finding Things (&&, cut sort, uniq, wc, grep)",
+        "type": "video",
+        "desc": "description",
+        "img": "", 
+        "href": "https://youtu.be/nLa6jAbULe8"
+      },
+      {
+        "title": "Automate the Boring Stuff with Python",
+        "type": "catalogue",
+        "desc": "Cosas con python",
+        "img": "",
+        "href": "https://automatetheboringstuff.com/#toc"
+      },
+      {
+        "title": "Linux for Programmers #3 | Linux Users and Groups",
+        "type": "video",
+        "desc": "description",
+        "img": "",
+        "href": "https://youtu.be/b-9j2jiCOEA"
+      },
+      {
+        "title": "Linux File Permissions: Commands with Example",
+        "type": "video",
+        "desc": "description",
+        "img": "",
+        "href": "https://youtu.be/D-VqgvBMV7g"
+      },
+      {
+        "title": "Linux processes, init, fork/exec, ps, kill, fg, bg, jobs",
+        "type": "video",
+        "desc": "description",
+        "img": "",
+        "href": "https://youtu.be/TJzltwv7jJs"
+      },
+      {
+        "title": "Linux for Programmers #6 | Networking Commands",
+        "type": "video",
+        "desc": "description",
+        "img": "",
+        "href": "https://youtu.be/vDWY3PuHMX8"
+      },
+      {
+        "title": "Linux Command Line Tutorial for Begginers 37 - grep command",
+        "type": "video",
+        "desc": "description",
+        "img": "",
+        "href": "https://youtu.be/_SxRZ4HMIBE"
+      },
+      {
+        "title": "How To Learn Hacking With CTFs",
+        "type": "video",
+        "desc": "description",
+        "img": "",
+        "href": "https://youtu.be/Lus7aNf2xDg"
+      },
+      {
+        "title": "Are CTFs even real? Featuring John Hammond",
+        "type": "video",
+        "desc": "description",
+        "img": "",
+        "href": "https://youtu.be/u4u6ob13s2c"
+      },
+      {
+        "title": "W3 Schools",
+        "type": "page",
+        "desc": "description",
+        "img": "",
+        "href": "https://www.w3schools.com/"
+      },
+      {
+        "title": "HTML5 Security Cheatsheet",
+        "type": "page",
+        "desc": "https://html5sec.org/",
+        "img": "",
+        "href": ""
+      },
+      {
+        "title": "title",
+        "type": "type",
+        "desc": "description",
+        "img": "",
+        "href": ""
+      }
+    ],
+    "courses": [
+      {
+        "name": "Cybersecurity Beginner Career Path (Online)",
+        "desc": "Introduccion a fundamentos de ciberseguridad y sistema operativo Linux",
+        "img": "/xd.png",
+        "href": "https://cybertalents.com/learn/cybersecurity-beginner-career-path"
+      },
+      {
+        "name": "",
+        "desc": "",
+        "img": "/xd.png",
+        "href": ""
+      },
+      {
+        "name": "",
+        "desc": "",
+        "img": "/xd.png",
+        "href": ""
+      }
+    ]
+  },
+  "about": {
+    "info": [
+      {
+        "title": "Nuestra Pasìon:",
+        "desc": " La ciberseguridad no es solo una disciplina para nosotros; es una pasión que impulsa cada uno de nuestros pasos. Nos emociona explorar los entresijos de la seguridad digital, comprender las amenazas emergentes y desarrollar habilidades que nos permitan proteger sistemas y datos vitales en un mundo cada vez más interconectado."
+      },
+      {
+        "title": "Nuestro Objetivo:",
+        "desc": "En el Grupo UEHA, creemos en el poder del aprendizaje continuo. Nos esforzamos por adquirir nuevos conocimientos, dominar herramientas y técnicas, y compartir nuestras experiencias. Nuestro objetivo es no solo mejorar nuestras habilidades individuales, sino también fomentar un ambiente de colaboración donde todos puedan crecer juntos."
+      },
+      {
+        "title": "Nuestra Mision:",
+        "desc": "Como estudiantes en el campo de la ciberseguridad, estamos comprometidos a estar en la vanguardia de la protección digital. Buscamos identificar y abordar las últimas amenazas y vulnerabilidades, desarrollar soluciones innovadoras y promover prácticas de seguridad sólidas en todos los aspectos de la vida digital, y participar en respectivos eventos CTF."
+      }
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-const {prisma} = require('@/libs/db');
+const {prisma} = require('@/services/libs/db');
 
 const getUserByEmail = async (data) => {
     try {
