@@ -1,7 +1,8 @@
 'use client'
+
 import React from 'react'
-import MyImage from '@/components/images/MyImage'
-import Input from '@/components/ui/forms/Input';
+import MyImage from '@/resources/images/MyImage';
+import Input from '@/static-components/forms/Input';
 import { useState, useRef } from 'react';
 
 const InputClassName = "w-full bg-black py-3 px-6 my-1 " + 

@@ -1,5 +1,5 @@
+import { adminSchema } from '@/services/database/schemas/admin.schema';
 const {NextResponse} = require('next/server');
-const {adminSchema} = require('@/schemas/admin.schema');
 const adminServices = require("@/services/admin.services");
 
 export async function POST(request) {
