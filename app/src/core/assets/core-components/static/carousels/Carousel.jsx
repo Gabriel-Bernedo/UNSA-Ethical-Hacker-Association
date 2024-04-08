@@ -2,20 +2,6 @@
 import React, { useState } from 'react'
 import CarouselItem from './CarouselItem'
 import { Carousel, Typography } from '@material-tailwind/react'
-function useIndex ({begin, length}) {
-  const [index, setIndex] = useState(begin)
-
-  function nextIndex(){
-    setIndex((index + 1) % length)
-  }
-
-  function previousIndex(){
-    setIndex((index - 1 + length) % length)
-  }
-
-  return {index, setIndex, nextIndex, previousIndex}
-}
-
 
 function renderItem({render, item, key}){
   if(render){
@@ -26,10 +12,7 @@ function renderItem({render, item, key}){
   }
 }
 
-
-
 export default function MyCarousel({data, className, render}) {
-  const {index, nextIndex, previousIndex} = useIndex({length: data.length, begin:0})
 
   return (
 		<Carousel className={className || "rounded-xl"}>

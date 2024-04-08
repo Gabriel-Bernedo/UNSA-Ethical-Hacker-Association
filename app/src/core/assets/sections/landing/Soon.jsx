@@ -7,7 +7,7 @@ export default function Soon() {
         Proximamente...
       </h3>
       <p className="text-lg font-light">
-        Mas Actividades
+        Estamos preparando cositas 😏😏😏
       </p>
     </div>
   )

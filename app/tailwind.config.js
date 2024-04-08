@@ -27,6 +27,7 @@ module.exports = withMT({
         "wallpaper-ins": "url('/wallpapers/ins.webp')",
         "wallpaper-steg": "url('/wallpapers/steg.webp')",
         "wallpaper-hash": "url('/wallpapers/hash.webp')",
+        "wallpaper-noisy": "url('/wallpapers/noise wallpaper.avif')",
       },
       dropShadow: {
         "bitLight" : '0 10px 10px rgba(125, 70, 255, 0.25)',

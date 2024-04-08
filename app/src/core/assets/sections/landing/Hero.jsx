@@ -3,7 +3,7 @@ import React from 'react'
 export default function Hero(){
     return (
         <div className="flex w-full
-            items-center justify-center h-dvh lg:bg-wallpaper-1 lg:bg-cover bg-center"
+            items-center justify-center h-dvh bg-wallpaper-noisy bg-cover bg-center"
             id="Home"
         >
             <div className="m-8 lg:backdrop-blur 

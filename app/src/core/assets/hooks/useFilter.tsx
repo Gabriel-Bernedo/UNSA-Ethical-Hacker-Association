@@ -21,8 +21,6 @@ export enum filterSetUp{
 }
 
 export function useFilter({setUp} : {setUp: filterSetUp}) : filterOptions{
-  
-
   switch(setUp){
     case filterSetUp.none:
       return {}
@@ -33,10 +31,16 @@ export function useFilter({setUp} : {setUp: filterSetUp}) : filterOptions{
         setTitle(event.target?.value)
       }
       return {title: [title, handleTitle]}
+      
     case filterSetUp.resources:
       return {}
 
     default:
       return {}
   }
+}
+
+export function useDataFilter({setUp, data}){
+  const filter = useFilter({setUp})
+  return {filter, data}
 }

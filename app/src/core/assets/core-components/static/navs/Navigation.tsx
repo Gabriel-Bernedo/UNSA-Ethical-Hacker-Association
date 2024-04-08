@@ -29,7 +29,7 @@ const Navigation : FC<NavProps> = ({nav}) => {
         :
       ""
       }
-      <SessionStatus />
+      {/* <SessionStatus /> */}
     </header>
   )
   }

@@ -12,6 +12,7 @@ import { filterSetUp } from '@/hooks/useFilter'
 
 export const ListDashboard : FC<DashboardProps<any>> = ({data}) => {
   const filterOptions = useFilter({setUp: filterSetUp.news})
+  
   return (
     <div className="flex h-full p-8 pt-[92px]">
       <Filter 

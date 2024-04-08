@@ -4,7 +4,7 @@ import CTF from './CTF'
 import Soon from './Soon'
 import MyCarousel from '@/static-components/carousels/Carousel'
 const data = [
-  CTF,
+  // CTF,
   Soon,
 ]
 export default function Activities() {
